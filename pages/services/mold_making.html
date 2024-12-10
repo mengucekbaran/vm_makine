@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VM MAKİNE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== BOOTSTRAP ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--=============== FONTAWESOME ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--================== JQUERY================= -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+
+
+
+
+    <script>
+        // Document ready event
+        $(document).ready(function () {
+            // Navbarı yükleme
+            // *********************NAVBAR**************************//
+            $("#unite-header").load("../../includes/navbar.html", function () {
+                showMenu('nav-toggle', 'nav-menu');
+                // Navbar yüklendikten sonra initializeNavbar fonksiyonunu çağırın
+                initializeNavbar();
+            });
+            // *********************MAIN**************************//
+            // $("#main-section").load("../pages/home.html", function () {});
+            // *********************FOOTER**************************//
+            $("#footer-section").load("../../includes/footer.html", function () { });
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--=============== HEADER ===============-->
+        <div class="unite-header" id="unite-header"></div>
+        <div class="main-section" id="main-section">
+            <div class="titlebar m-0" bis_skin_checked="1">
+                <div class="row" bis_skin_checked="1">
+                    <div bis_skin_checked="1"></div>
+                    <div class="right" bis_skin_checked="1"></div>
+                </div>
+            </div>
+            <div class="image-container" style="position:relative;" bis_skin_checked="1">
+                <div class="actual-image-container" bis_skin_checked="1">
+                    <picture>
+                        <source
+                            data-lazy-srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2020/08/WeChat-Image_20200825145712-e1598348073704.jpg.webp"
+                            type="image/webp"
+                            srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2020/08/WeChat-Image_20200825145712-e1598348073704.jpg.webp">
+                        <img src="https://www.3erp.com/wp-content/uploads/2020/08/WeChat-Image_20200825145712-e1598348073704.jpg"
+                            width="100%;" alt="Mold Making Services" class="webpexpress-processed entered lazyloaded"
+                            data-lazy-src="https://www.3erp.com/wp-content/uploads/2020/08/WeChat-Image_20200825145712-e1598348073704.jpg"
+                            data-ll-status="loaded"><noscript><img
+                                src="https://www.3erp.com/wp-content/uploads/2020/08/WeChat-Image_20200825145712-e1598348073704.jpg"
+                                width="100%;" alt="Mold Making Services" class="webpexpress-processed"></noscript>
+                    </picture>
+                </div>
+                <div class="text black-back-p-40-shadow text-center v-align-middle" bis_skin_checked="1">
+                    <h1 class="color-white mb-0 text-center">Short-Run &amp; Mass Production Mold Making Services</h1>
+                    <p class="color-white text-center font-400">One-Stop Mold Making Supplies for All Your Project Needs
+                    </p><br> <a class="blue-grad-button" href="https://www.3erp.com/request-a-quote/" title="">Start
+                        With A Free Project Review</a>
+                </div>
+            </div>
+            <div class="bgg-image bg-white" style="padding: 50px 0px;" bis_skin_checked="1">
+                <div class="bg-testi-white" style="background:none;" bis_skin_checked="1">
+                    <div class="container" bis_skin_checked="1">
+                        <div class="col-md-12" bis_skin_checked="1"> <br>
+                            <div class="" style="padding:0px 10px;" bis_skin_checked="1">
+                                <p>Need mold making supplies for mass production parts? 3ERP is known as the best mold
+                                    maker in China. With mold making facilities in house and resources from our
+                                    partners, we are able to provide plastic injection molds for both rigid plastics and
+                                    rubbers, metal injection molds for all types of precision stainless steel parts, and
+                                    pressure die casting molds for aluminum, magnesium and zinc. We offer low-cost local
+                                    production molds and high-quality exported molds for all your project needs.</p>
+                                <p>Whatever you need <a href="https://www.3erp.com/services/rapid-tooling/"
+                                        target="_blank" rel="noopener">prototype molds</a> for the short-run production,
+                                    or mass production molds for millions shots, 3ERP can handle them for you smoothly.
+                                </p>
+                            </div> <br>
+                            <div class="text-center" bis_skin_checked="1"> <a class="blue-grad-button d-none-above-768"
+                                    href="https://www.3erp.com/request-a-quote/" title="">Start With A Free Project
+                                    Review</a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bgg-image bg-white" bis_skin_checked="1">
+                <div class="bg-testi-white" bis_skin_checked="1">
+                    <div class="" bis_skin_checked="1">
+                        <div class="" bis_skin_checked="1">
+                            <div class="container" bis_skin_checked="1">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4" bis_skin_checked="1">
+                                        <div class="" bis_skin_checked="1">
+                                            <div class="pr-20" bis_skin_checked="1">
+                                                <picture>
+                                                    <source
+                                                        data-lazy-srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2020/09/plastic-injection-mold-e1599041354402.jpeg.webp"
+                                                        type="image/webp"
+                                                        srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2020/09/plastic-injection-mold-e1599041354402.jpeg.webp">
+                                                    <img src="https://www.3erp.com/wp-content/uploads/2020/09/plastic-injection-mold-e1599041354402.jpeg"
+                                                        alt="3ERP sheet metal image" width="100%"
+                                                        class="webpexpress-processed entered lazyloaded"
+                                                        data-lazy-src="https://www.3erp.com/wp-content/uploads/2020/09/plastic-injection-mold-e1599041354402.jpeg"
+                                                        data-ll-status="loaded"><noscript><img
+                                                            src="https://www.3erp.com/wp-content/uploads/2020/09/plastic-injection-mold-e1599041354402.jpeg"
+                                                            alt="3ERP sheet metal image" width="100%"
+                                                            class="webpexpress-processed"></noscript>
+                                                </picture> <br><br><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8" bis_skin_checked="1">
+                                        <div class="" bis_skin_checked="1">
+                                            <div class="tile-content-complete-x ptb-0" bis_skin_checked="1">
+                                                <div class="s-tile-title" bis_skin_checked="1">
+                                                    <h3>Our Advantages of Mold Making Services</h3>
+                                                </div>
+                                                <div class="v-s-tile-content special-list-automative dots-before-h5"
+                                                    bis_skin_checked="1">
+                                                    <p>3ERP is an experienced provider of mold making services with lots to
+                                                        offer beyond our competitors:</p>
+                                                    <p><strong>1. Fast DFM reports<br></strong>Although we check your design
+                                                        feasibility when providing a quote, we can provide a fast and
+                                                        thorough DFM (design for manufacturability) report before production
+                                                        begins. In the DFM report, we’ll identify any errors or issues that
+                                                        might cause a manufacturing problem down the line.</p>
+                                                    <p><strong>2. Wide range of molds<br></strong>We offer several different
+                                                        types of molds, which means you can avoid splitting your projects;
+                                                        just send everything to us to ensure your project runs smoothly.</p>
+                                                    <p><strong>3. Fast Turnaround<br></strong>Our large facility and
+                                                        machining capabilities allow us to build molds quickly, whatever the
+                                                        application or material, which means you can get your moldings
+                                                        completed faster.</p>
+                                                    <p><strong>4. Molding Capabilities<br></strong>3ERP can ship your molds
+                                                        to you directly, but we can also handle injection molding and other
+                                                        production services to deliver you prototypes and final parts using
+                                                        those molds.</p> <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #f2f6f9!important;" bis_skin_checked="1"> <br><br><br>
+                <div class="container">
+                    <div class="row pd-10-mob" bis_skin_checked="1">
+                        <div class="pd-10-mob pos-relative" bis_skin_checked="1">
+                            <div class="pd-10-mob" bis_skin_checked="1">
+                                <div class="col-md-12 text-center" bis_skin_checked="1">
+                                    <h3 class="text-center"><strong>See why our customers love us</strong></h3> <br><br>
+                                </div>
+                            </div>
+                            <div class="shadow-it-1x-x mySlides h4-padding-bottom max-width-700-testi"
+                                style="display: block;" bis_skin_checked="1">
+                                <div class="row" bis_skin_checked="1">
+                                    <div class="content-testi shadow-it col-md-7" bis_skin_checked="1">
+                                        <p>Every quarter, we order approximately 20 sets of plastic enclosures for our
+                                            device from 3ERP. The enclosures were initially made by urethane casting, but
+                                            Ronan came back to me with the idea of using an aluminum mold, which allowed me
+                                            to get a few hundred moldings. We decided to move to this process. The T1
+                                            samples weren’t good enough, as we got some shrink marks, but this was quickly
+                                            sorted out when we received the T2 samples.<br><br>Although we had to invest
+                                            more for the mold, we now save 70% compared with urethane casting, and we can
+                                            use UV-resistant ABS to keep the color stable. Overall, I am very happy with the
+                                            solution.</p>
+                                    </div>
+                                    <div class="testi-image-div text-center col-md-5" bis_skin_checked="1">
+                                        <picture>
+                                            <source
+                                                data-lazy-srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2020/03/0-2.jpeg.webp"
+                                                type="image/webp"
+                                                srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2020/03/0-2.jpeg.webp">
+                                            <img src="https://www.3erp.com/wp-content/uploads/2020/03/0-2.jpeg"
+                                                class="testi-image-max webpexpress-processed entered lazyloaded"
+                                                alt="Christian - Design Engineer" width="150" height="150"
+                                                data-lazy-src="https://www.3erp.com/wp-content/uploads/2020/03/0-2.jpeg"
+                                                data-ll-status="loaded"><noscript><img
+                                                    src="https://www.3erp.com/wp-content/uploads/2020/03/0-2.jpeg"
+                                                    class="testi-image-max webpexpress-processed"
+                                                    alt="Christian - Design Engineer" width="150" height="150"></noscript>
+                                        </picture>
+                                        <div class="customer-details" bis_skin_checked="1"><span
+                                                class="name">Christian</span></div>
+                                        <div class="customer-details" bis_skin_checked="1"><span class="designation">Design
+                                                Engineer</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shadow-it-1x-x mySlides h4-padding-bottom max-width-700-testi"
+                                style="display: none;" bis_skin_checked="1">
+                                <div class="row" bis_skin_checked="1">
+                                    <div class="content-testi shadow-it col-md-7" bis_skin_checked="1">
+                                        <p>Two months ago, I was super stressed by an urgent plastic molding project. Our
+                                            customer desperately wanted 100 sets at very short notice in order to run
+                                            testing with real materials, even though normal production would have taken more
+                                            than six months. None of our preferred moldmaking suppliers could help us, given
+                                            the deadline. Luckily, one of my friends recommended 3ERP to us by
+                                            chance.<br><br>3ERP has a fantastic mold design team. They managed to finish the
+                                            mold design within 10 days and started to fabricate the molds right after that.
+                                            I was surprised that more than 60 items, including some big parts, were
+                                            completed to a decent standard within two months. Our customers eventually
+                                            received the moldings to run their testing. 3ERP saved our business!</p>
+                                    </div>
+                                    <div class="testi-image-div text-center col-md-5" bis_skin_checked="1">
+                                        <picture>
+                                            <source
+                                                data-lazy-srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2020/03/0-1-1.jpeg.webp"
+                                                type="image/webp"><img
+                                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E"
+                                                class="testi-image-max webpexpress-processed"
+                                                alt="David Roberts - Design Engineer" width="150" height="150"
+                                                data-lazy-src="https://www.3erp.com/wp-content/uploads/2020/03/0-1-1.jpeg"><noscript><img
+                                                    src="https://www.3erp.com/wp-content/uploads/2020/03/0-1-1.jpeg"
+                                                    class="testi-image-max webpexpress-processed"
+                                                    alt="David Roberts - Design Engineer" width="150"
+                                                    height="150"></noscript>
+                                        </picture>
+                                        <div class="customer-details" bis_skin_checked="1"><span class="name">David
+                                                Roberts</span></div>
+                                        <div class="customer-details" bis_skin_checked="1"><span class="designation">Design
+                                                Engineer</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="change-circles text-center" bis_skin_checked="1"><span
+                                    class="change-circle-2 circle-testi act" onclick="currentDiv(1)"></span><span
+                                    class="change-circle-2 circle-testi" onclick="currentDiv(2)"></span> </div>
+                        </div>
+                    </div> <br><br><br><br>
+                </div>
+            </div>
+            <div class="bgg-image pt-80 bg-white" bis_skin_checked="1">
+                <div class="bg-testi-white" style="background:none;padding:0px 10px;" bis_skin_checked="1">
+                    <div class="row" bis_skin_checked="1">
+                        <div class="col-md-12" bis_skin_checked="1">
+                            <h3 class="mb-0 text-center">Mold Making Processes</h3><br>
+                            <div class="max-720 text-center" bis_skin_checked="1">
+                                <p>Mold making is a complex process that requires a high level of skill and experience.
+                                    Although each case is different, a typical order for a set of molds may go something
+                                    like this:</p>
+                            </div> <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bgg-image bg-gradient-half-blue-x pos-relative content-avail"
+                style="padding: 0px 0px 50px 0px;background:#fff;" bis_skin_checked="1">
+                <div class="container">
+                    <div class="bg-testi-white trust-section-rapid" style="background:none;" bis_skin_checked="1">
+                        <div class="row bg-whie bg-shadow-x" bis_skin_checked="1">
+                            <div class="col-md-6" bis_skin_checked="1">
+                                <div class="row" bis_skin_checked="1">
+                                    <div class="col-md-3" bis_skin_checked="1">
+                                        <div class="icon-section text-center" bis_skin_checked="1"> <img width="54"
+                                                height="51" class="icon-class entered lazyloaded"
+                                                src="https://www.3erp.com/wp-content/uploads/2014/08/Asset-2.svg"
+                                                alt="dfm analysis 1. DFM"
+                                                data-lazy-src="https://www.3erp.com/wp-content/uploads/2014/08/Asset-2.svg"
+                                                data-ll-status="loaded"><noscript><img width="54" height="51"
+                                                    class="icon-class"
+                                                    src="https://www.3erp.com/wp-content/uploads/2014/08/Asset-2.svg"
+                                                    alt="dfm analysis 1. DFM"></noscript> </div>
+                                    </div>
+                                    <div class="col-md-9" bis_skin_checked="1">
+                                        <div class="icon-section-text" bis_skin_checked="1">
+                                            <p class="para-heading"><strong>1. DFM</strong></p>
+                                            <p>As soon as the customer confirms the order of molds, we will start to do an
+                                                initial analysis of the parts to get an idea of the part line, gate
+                                                positions, etc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6" bis_skin_checked="1">
+                                <div class="row" bis_skin_checked="1">
+                                    <div class="col-md-3" bis_skin_checked="1">
+                                        <div class="icon-section text-center" bis_skin_checked="1"> <img width="54"
+                                                height="51" class="icon-class entered lazyloaded"
+                                                src="https://www.3erp.com/wp-content/uploads/2014/08/Asset-3.svg"
+                                                alt=" 2. Mold design and mold flow analysis"
+                                                data-lazy-src="https://www.3erp.com/wp-content/uploads/2014/08/Asset-3.svg"
+                                                data-ll-status="loaded"><noscript><img width="54" height="51"
+                                                    class="icon-class"
+                                                    src="https://www.3erp.com/wp-content/uploads/2014/08/Asset-3.svg"
+                                                    alt=" 2. Mold design and mold flow analysis"></noscript> </div>
+                                    </div>
+                                    <div class="col-md-9" bis_skin_checked="1">
+                                        <div class="icon-section-text" bis_skin_checked="1">
+                                            <p class="para-heading"><strong>2. Mold design and mold flow analysis</strong>
+                                            </p>
+                                            <p>The second step involves the use of predictive modeling software which allows
+                                                us to see how the molten material will behave when it enters the mold,
+                                                allowing for further improvements to the design.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-md-6" bis_skin_checked="1">
+                                <div class="row" bis_skin_checked="1">
+                                    <div class="col-md-3" bis_skin_checked="1">
+                                        <div class="icon-section text-center" bis_skin_checked="1"> <img width="54"
+                                                height="51" class="icon-class entered lazyloaded"
+                                                src="https://www.3erp.com/wp-content/uploads/2014/08/Asset-4.svg"
+                                                alt=" 3. CNC machining and EDM"
+                                                data-lazy-src="https://www.3erp.com/wp-content/uploads/2014/08/Asset-4.svg"
+                                                data-ll-status="loaded"><noscript><img width="54" height="51"
+                                                    class="icon-class"
+                                                    src="https://www.3erp.com/wp-content/uploads/2014/08/Asset-4.svg"
+                                                    alt=" 3. CNC machining and EDM"></noscript> </div>
+                                    </div>
+                                    <div class="col-md-9" bis_skin_checked="1">
+                                        <div class="icon-section-text" bis_skin_checked="1">
+                                            <p class="para-heading"><strong>3. CNC machining and EDM</strong></p>
+                                            <p>We make the first molds using high-quality machining equipment, with the
+                                                plastic, steel, aluminum, etc. chosen by the customer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6" bis_skin_checked="1">
+                                <div class="row" bis_skin_checked="1">
+                                    <div class="col-md-3" bis_skin_checked="1">
+                                        <div class="icon-section text-center" bis_skin_checked="1"> <img width="47"
+                                                height="52" class="icon-class entered lazyloaded"
+                                                src="https://www.3erp.com/wp-content/uploads/2014/08/Asset-5.svg"
+                                                alt=" 4. T1 sample"
+                                                data-lazy-src="https://www.3erp.com/wp-content/uploads/2014/08/Asset-5.svg"
+                                                data-ll-status="loaded"><noscript><img width="47" height="52"
+                                                    class="icon-class"
+                                                    src="https://www.3erp.com/wp-content/uploads/2014/08/Asset-5.svg"
+                                                    alt=" 4. T1 sample"></noscript> </div>
+                                    </div>
+                                    <div class="col-md-9" bis_skin_checked="1">
+                                        <div class="icon-section-text" bis_skin_checked="1">
+                                            <p class="para-heading"><strong>4. T1 sample</strong></p>
+                                            <p>With the newly made molds, we make a T1 sample to have a clear vision of how
+                                                the customer’s final molded parts will turn out.<br><br></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-md-6" bis_skin_checked="1">
+                                <div class="row" bis_skin_checked="1">
+                                    <div class="col-md-3" bis_skin_checked="1">
+                                        <div class="icon-section text-center" bis_skin_checked="1"> <img width="42"
+                                                height="61" class="icon-class entered lazyloaded"
+                                                src="https://www.3erp.com/wp-content/uploads/2014/08/Asset-6.svg"
+                                                alt=" 5. Improvement if necessary"
+                                                data-lazy-src="https://www.3erp.com/wp-content/uploads/2014/08/Asset-6.svg"
+                                                data-ll-status="loaded"><noscript><img width="42" height="61"
+                                                    class="icon-class"
+                                                    src="https://www.3erp.com/wp-content/uploads/2014/08/Asset-6.svg"
+                                                    alt=" 5. Improvement if necessary"></noscript> </div>
+                                    </div>
+                                    <div class="col-md-9" bis_skin_checked="1">
+                                        <div class="icon-section-text" bis_skin_checked="1">
+                                            <p class="para-heading"><strong>5. Improvement if necessary</strong></p>
+                                            <p>Based on our analysis of the T1 sample, we review the mold design and make
+                                                any adjustments needed.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6" bis_skin_checked="1">
+                                <div class="row" bis_skin_checked="1">
+                                    <div class="col-md-3" bis_skin_checked="1">
+                                        <div class="icon-section text-center" bis_skin_checked="1"> <img width="42"
+                                                height="37" class="icon-class entered lazyloaded"
+                                                src="https://www.3erp.com/wp-content/uploads/2014/08/1Asset-2.svg"
+                                                alt=" 6. Commence production and shipping"
+                                                data-lazy-src="https://www.3erp.com/wp-content/uploads/2014/08/1Asset-2.svg"
+                                                data-ll-status="loaded"><noscript><img width="42" height="37"
+                                                    class="icon-class"
+                                                    src="https://www.3erp.com/wp-content/uploads/2014/08/1Asset-2.svg"
+                                                    alt=" 6. Commence production and shipping"></noscript> </div>
+                                    </div>
+                                    <div class="col-md-9" bis_skin_checked="1">
+                                        <div class="icon-section-text" bis_skin_checked="1">
+                                            <p class="para-heading"><strong>6. Commence production and shipping</strong></p>
+                                            <p>We manufacture the molds in accordance with the final specifications before
+                                                shipping them to the customer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="bgg-image cnc-applications pt-64" style="background:#f2f6f9;" bis_skin_checked="1">
+                <div class="container">
+                    <div class="bg-teite" bis_skin_checked="1">
+                        <div class="row row213" bis_skin_checked="1">
+                            <div class="col-md-12 text-in-cnc-app text-center" bis_skin_checked="1">
+                                <h2 class="text-center application-main-heading">Types of Molds We are Offering</h2>
+                            </div>
+                        </div>
+                        <div class="row bg-we pt-64" bis_skin_checked="1">
+                            <div class="col-md-4 col-sm-9 mx-auto s-tile-x" bis_skin_checked="1">
+                                <div class="bg-shadow-g get-my-height" bis_skin_checked="1">
+                                    <div class="s-tile-image-x" bis_skin_checked="1">
+                                        <picture>
+                                            <source
+                                                data-lazy-srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2020/09/plastic-injection-molds-400x265.jpeg.webp"
+                                                type="image/webp"
+                                                srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2020/09/plastic-injection-molds-400x265.jpeg.webp">
+                                            <img src="https://www.3erp.com/wp-content/uploads/2020/09/plastic-injection-molds-400x265.jpeg"
+                                                alt="3ERP Plastic Injection Mold" width="100%"
+                                                class="webpexpress-processed entered lazyloaded"
+                                                data-lazy-src="https://www.3erp.com/wp-content/uploads/2020/09/plastic-injection-molds-400x265.jpeg"
+                                                data-ll-status="loaded"><noscript><img
+                                                    src="https://www.3erp.com/wp-content/uploads/2020/09/plastic-injection-molds-400x265.jpeg"
+                                                    alt="3ERP Plastic Injection Mold" width="100%"
+                                                    class="webpexpress-processed"></noscript>
+                                        </picture>
+                                    </div>
+                                    <div class="tile-content-complete-xp" bis_skin_checked="1">
+                                        <div class="s-tile-title-x" bis_skin_checked="1">
+                                            <h4 class="text-center">Plastic Injection Mold</h4>
+                                        </div>
+                                        <div class="s-tile-content-x" bis_skin_checked="1">
+                                            <p class="text-center">Plastic injection molds are aluminum or steel molds used
+                                                to make parts from a wide range of plastics, including nylons, acrylics,
+                                                elastomers and reinforced materials like glass-filled polyamide. Custom
+                                                plastic molds can last between 100,000 and 1,000,000 shots.<br></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-9 mx-auto s-tile-x" bis_skin_checked="1">
+                                <div class="bg-shadow-g get-my-height" bis_skin_checked="1">
+                                    <div class="s-tile-image-x" bis_skin_checked="1">
+                                        <picture>
+                                            <source
+                                                data-lazy-srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2020/08/metal-injection-mold-400x265.jpg.webp"
+                                                type="image/webp"
+                                                srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2020/08/metal-injection-mold-400x265.jpg.webp">
+                                            <img src="https://www.3erp.com/wp-content/uploads/2020/08/metal-injection-mold-400x265.jpg"
+                                                alt="3ERP metal injection mold" width="100%"
+                                                class="webpexpress-processed entered lazyloaded"
+                                                data-lazy-src="https://www.3erp.com/wp-content/uploads/2020/08/metal-injection-mold-400x265.jpg"
+                                                data-ll-status="loaded"><noscript><img
+                                                    src="https://www.3erp.com/wp-content/uploads/2020/08/metal-injection-mold-400x265.jpg"
+                                                    alt="3ERP metal injection mold" width="100%"
+                                                    class="webpexpress-processed"></noscript>
+                                        </picture>
+                                    </div>
+                                    <div class="tile-content-complete-xp" bis_skin_checked="1">
+                                        <div class="s-tile-title-x" bis_skin_checked="1">
+                                            <h4 class="text-center">Metal Injection Mold</h4>
+                                        </div>
+                                        <div class="s-tile-content-x" bis_skin_checked="1">
+                                            <p class="text-center">Metal injection molding (MIM) is a form of injection
+                                                molding where a metal and binder mix is used as feedstock. A metal injection
+                                                mold is usually made from tool steel to withstand the metal injection, but
+                                                we can also use aluminum. <br></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-9 mx-auto s-tile-x" bis_skin_checked="1">
+                                <div class="bg-shadow-g get-my-height" bis_skin_checked="1">
+                                    <div class="s-tile-image-x" bis_skin_checked="1">
+                                        <picture>
+                                            <source
+                                                data-lazy-srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2020/08/die-casting-mold-e1598355201684-400x265.png.webp"
+                                                type="image/webp"
+                                                srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2020/08/die-casting-mold-e1598355201684-400x265.png.webp">
+                                            <img src="https://www.3erp.com/wp-content/uploads/2020/08/die-casting-mold-e1598355201684-400x265.png"
+                                                alt="3ERP Die Casting Mold" width="100%"
+                                                class="webpexpress-processed entered lazyloaded"
+                                                data-lazy-src="https://www.3erp.com/wp-content/uploads/2020/08/die-casting-mold-e1598355201684-400x265.png"
+                                                data-ll-status="loaded"><noscript><img
+                                                    src="https://www.3erp.com/wp-content/uploads/2020/08/die-casting-mold-e1598355201684-400x265.png"
+                                                    alt="3ERP Die Casting Mold" width="100%"
+                                                    class="webpexpress-processed"></noscript>
+                                        </picture>
+                                    </div>
+                                    <div class="tile-content-complete-xp" bis_skin_checked="1">
+                                        <div class="s-tile-title-x" bis_skin_checked="1">
+                                            <h4 class="text-center">Die Casting Mold</h4>
+                                        </div>
+                                        <div class="s-tile-content-x" bis_skin_checked="1">
+                                            <p class="text-center">Unlike many prototyping specialists, we can provide metal
+                                                casting molds (and a low-volume casting service through our partners). These
+                                                molds — typically made from hardened steel — can be used to make parts from
+                                                aluminum, zinc, magnesium and other non-ferrous metals.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row bg-we" bis_skin_checked="1">
+                            <div class="col-md-4 col-sm-9 mx-auto s-tile-x" bis_skin_checked="1">
+                                <div class="bg-shadow-g get-my-height" bis_skin_checked="1">
+                                    <div class="s-tile-image-x" bis_skin_checked="1">
+                                        <picture>
+                                            <source
+                                                data-lazy-srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2020/09/investment-casting-molds-400x265.jpeg.webp"
+                                                type="image/webp"
+                                                srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2020/09/investment-casting-molds-400x265.jpeg.webp">
+                                            <img src="https://www.3erp.com/wp-content/uploads/2020/09/investment-casting-molds-400x265.jpeg"
+                                                alt="3ERP investment casting molds" width="100%"
+                                                class="webpexpress-processed entered lazyloaded"
+                                                data-lazy-src="https://www.3erp.com/wp-content/uploads/2020/09/investment-casting-molds-400x265.jpeg"
+                                                data-ll-status="loaded"><noscript><img
+                                                    src="https://www.3erp.com/wp-content/uploads/2020/09/investment-casting-molds-400x265.jpeg"
+                                                    alt="3ERP investment casting molds" width="100%"
+                                                    class="webpexpress-processed"></noscript>
+                                        </picture>
+                                    </div>
+                                    <div class="tile-content-complete-xp" bis_skin_checked="1">
+                                        <div class="s-tile-title-x" bis_skin_checked="1">
+                                            <h4 class="text-center">Investment Casting Mold</h4>
+                                        </div>
+                                        <div class="s-tile-content-x" bis_skin_checked="1">
+                                            <p class="text-center">We can make low-cost investment casting molds by 3D
+                                                printing a wax pattern and surrounding it with ceramic. The ceramic molds
+                                                can then be used to make metal cast parts from metals like aluminum, zinc,
+                                                magnesium, stainless steel and more.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-9 mx-auto s-tile-x" bis_skin_checked="1">
+                                <div class="bg-shadow-g get-my-height" bis_skin_checked="1">
+                                    <div class="s-tile-image-x" bis_skin_checked="1">
+                                        <picture>
+                                            <source
+                                                data-lazy-srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2020/08/extrusion-mold-87464-13176484-400x265.jpg.webp"
+                                                type="image/webp"
+                                                srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2020/08/extrusion-mold-87464-13176484-400x265.jpg.webp">
+                                            <img src="https://www.3erp.com/wp-content/uploads/2020/08/extrusion-mold-87464-13176484-400x265.jpg"
+                                                alt="3ERP extrusion mold" width="100%"
+                                                class="webpexpress-processed entered lazyloaded"
+                                                data-lazy-src="https://www.3erp.com/wp-content/uploads/2020/08/extrusion-mold-87464-13176484-400x265.jpg"
+                                                data-ll-status="loaded"><noscript><img
+                                                    src="https://www.3erp.com/wp-content/uploads/2020/08/extrusion-mold-87464-13176484-400x265.jpg"
+                                                    alt="3ERP extrusion mold" width="100%"
+                                                    class="webpexpress-processed"></noscript>
+                                        </picture>
+                                    </div>
+                                    <div class="tile-content-complete-xp" bis_skin_checked="1">
+                                        <div class="s-tile-title-x" bis_skin_checked="1">
+                                            <h4 class="text-center">Extrusion Mold</h4>
+                                        </div>
+                                        <div class="s-tile-content-x" bis_skin_checked="1">
+                                            <p class="text-center">Our metal die molds can be used for aluminum extrusions
+                                                of alloys like 6061 and 6063. We also make molds for plastic extrusions of
+                                                materials like polystyrene, nylon, polypropylene and polythene.<br></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-9 mx-auto s-tile-x" bis_skin_checked="1">
+                                <div class="bg-shadow-g get-my-height" bis_skin_checked="1">
+                                    <div class="s-tile-image-x" bis_skin_checked="1">
+                                        <picture>
+                                            <source
+                                                data-lazy-srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2020/08/sheet-metal-molds-e1598355133694-400x265.jpg.webp"
+                                                type="image/webp"
+                                                srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2020/08/sheet-metal-molds-e1598355133694-400x265.jpg.webp">
+                                            <img src="https://www.3erp.com/wp-content/uploads/2020/08/sheet-metal-molds-e1598355133694-400x265.jpg"
+                                                alt="3ERP Sheet Metal Mold" width="100%"
+                                                class="webpexpress-processed entered lazyloaded"
+                                                data-lazy-src="https://www.3erp.com/wp-content/uploads/2020/08/sheet-metal-molds-e1598355133694-400x265.jpg"
+                                                data-ll-status="loaded"><noscript><img
+                                                    src="https://www.3erp.com/wp-content/uploads/2020/08/sheet-metal-molds-e1598355133694-400x265.jpg"
+                                                    alt="3ERP Sheet Metal Mold" width="100%"
+                                                    class="webpexpress-processed"></noscript>
+                                        </picture>
+                                    </div>
+                                    <div class="tile-content-complete-xp" bis_skin_checked="1">
+                                        <div class="s-tile-title-x" bis_skin_checked="1">
+                                            <h4 class="text-center">Sheet Metal Mold</h4>
+                                        </div>
+                                        <div class="s-tile-content-x" bis_skin_checked="1">
+                                            <p class="text-center">Our experience making sheet metal molds for stamping and
+                                                bending allows us to create sheet metal prototypes. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+                </div>
+                
+            </div>
+
+            <div class="bg-white" bis_skin_checked="1"><br><br><br>
+                <div class="container">
+                    <div class="row pd-10-mob" bis_skin_checked="1">
+                        <div class="col-md-12" bis_skin_checked="1">
+                            <h3 class="color-whit text-center">Mold Making FAQ</h3> <br>
+                            <div class="faqs" bis_skin_checked="1">
+                                <h4><span style="font-size: 16pt;">What is mold making and when do you need it?</span></h4>
+                                <p>Molds are normally created to duplicate plastic and metal parts. After testing the
+                                    prototypes and the market, it is the most cost-efficient way to launch your products at
+                                    scale.</p>
+                                <h4><span style="font-size: 16pt;">Should I choose a locally produced mold or an exported
+                                        mold?</span></h4>
+                                <p>Generally speaking, making plastic or metal molds (and moldings) is cheaper in China than
+                                    other countries. But shipping costs should also be considered: you will need to use air
+                                    freight if you have a tight schedule; sea freight is much cheaper, but will usually take
+                                    40 days or more.</p>
+                                <h4><span style="font-size: 16pt;">How long does a mold last?</span></h4>
+                                <p>A well-made, fully harden steel mold may be used for up to a million shots or injections,
+                                    depending on the mold shape and injection material. Aluminum molds are less durable,
+                                    which is good for short-run production with tight schedule.</p>
+                                <h4><span style="font-size: 16pt;">Can molds be any shape?</span></h4>
+                                <p>Molding designs should avoid sharp corners, inconsistent wall thicknesses, and other
+                                    features that restrict material flow.</p>
+                                <h4><span style="font-size: 16pt;">When do I need full automatic mold?</span></h4>
+                                <p>Whatever you decide to use, in the end, what is the best cost-efficient way to get your
+                                    parts done in the required quality is the key.</p>
+                            </div>
+                        </div>
+                    </div><br><br><br>
+                </div>
+                
+            </div>
+            <div class="row" bis_skin_checked="1"><br><br><br></div>
+        </div>
+        <div class="footer-section" id="footer-section"></div>
+
+    </div>
+
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

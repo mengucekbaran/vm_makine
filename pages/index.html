@@ -1,33 +1,73 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--=============== REMIXICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<head>
+    <title>VM MAKİNE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== BOOTSTRAP ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--=============== FONTAWESOME ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!--================== JQUERY================= -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="../assets/css/styles.css">
+    <!--================== JQUERY================= -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-        <title>Responsive navigation bar - Bedimcode</title>
-        <script>
-            $(function(){
-                // load Navbar
-                $("header#navbarContainer").load("../includes/navbar.html");
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    
+
+
+    <script>
+        // Document ready event
+        $(document).ready(function () {
+            // Navbarı yükleme
+            // *********************NAVBAR**************************//
+            $("#unite-header").load("../includes/navbar.html", function () {
+                showMenu('nav-toggle', 'nav-menu');
+                // Navbar yüklendikten sonra initializeNavbar fonksiyonunu çağırın
+                initializeNavbar();
             });
-        </script>
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="header" id="navbarContainer">
+            // Link ve sayfa adını parametre olarak alan bir fonksiyon tanımlama
+            // function loadPage(link, page) {
+            //     $(link).click(function (e) {
+            //         e.preventDefault(); // Sayfanın yenilenmesini engellemek için
+            //         $("#main-section").load(page);
+            //     });
+            // }
 
-        </header>
+            // Her bir link için loadPage fonksiyonunu çağırma
+            // loadPage("#contact-link", "../pages/contact.html");
+            // loadPage("#about-us-link", "../pages/about-us.html");
+
+            // Diğer linkler için aynı şekilde devam edebilirsiniz
+            // *********************MAIN**************************//
+            $("#main-section").load("../pages/home.html", function () {});
+            // *********************FOOTER**************************//
+            $("#footer-section").load("../includes/footer.html", function () {});
+        });
+
         
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+                <!--=============== HEADER ===============-->
+        <div class="unite-header" id="unite-header"></div>
+        <div class="main-section" id="main-section"></div>
+        <div class="footer-section" id="footer-section"></div>
+
+    </div>
+
+    
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../assets/js/main.js"></script>
+</body>
+
 </html>

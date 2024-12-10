@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VM MAKİNE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== BOOTSTRAP ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--=============== FONTAWESOME ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--================== JQUERY================= -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+
+
+
+
+    <script>
+        // Document ready event
+        $(document).ready(function () {
+            // Navbarı yükleme
+            // *********************NAVBAR**************************//
+            $("#unite-header").load("../../includes/navbar.html", function () {
+                showMenu('nav-toggle', 'nav-menu');
+                // Navbar yüklendikten sonra initializeNavbar fonksiyonunu çağırın
+                initializeNavbar();
+            });
+            // *********************MAIN**************************//
+            // $("#main-section").load("../pages/home.html", function () {});
+            // *********************FOOTER**************************//
+            $("#footer-section").load("../includes/footer.html", function () { });
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--=============== HEADER ===============-->
+        <div class="unite-header" id="unite-header"></div>
+        <div class="main-section" id="main-section">
+            <div class="banner-container" bis_skin_checked="1">
+                <div class="home-top mob-pick pt-64 bg-dark overflow-hidden d-none d-lg-block" bis_skin_checked="1">
+                    <div class="container px-m-24" bis_skin_checked="1">
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-lg-6" bis_skin_checked="1">
+                                <h1 class="fw-700 text-white h1-get-jquery h2">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Talep Üzerine Özel CNC İşleme Hizmetleri
+                                        </font>
+                                    </font>
+                                </h1>
+                                <div class="pt-3 pt-md-4 right-ul text-white mob-pick max-width-500 h1-get-jquery-2"
+                                    bis_skin_checked="1">
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Hızlı prototipler ve metal veya
+                                                plastikten üretim parçaları için çevrimiçi CNC işleme hizmeti. Bugün
+                                                anında fiyat teklifi alın ve özel CNC işlenmiş parçalarınızı daha iyi
+                                                fiyata sipariş edin.</font>
+                                        </font>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Tek seferlik CNC Prototipleri
+                                                </font>
+                                            </font>
+                                        </li>
+                                        <li>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">100K+ Seri Üretim İşleme</font>
+                                            </font>
+                                        </li>
+                                        <li>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">±0,01 mm kadar sıkı tolerans
+                                                </font>
+                                            </font>
+                                        </li>
+                                        <li>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">5 gün gibi kısa bir sürede
+                                                    teslimat</font>
+                                            </font>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mt-3 mt-md-5" bis_skin_checked="1"><a
+                                    class="btn btn-round btn-green fw-500 bg-btn"
+                                    href="https://www.3erp.com/request-a-quote/">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;"> Anında İletişime Geçin </font>
+                                        <i class="ri-whatsapp-fill" style="size: 32px;"></i>
+                                    </font>
+                                </a></div>
+                                <div class="mob-pick pb-120" bis_skin_checked="1"></div>
+                            </div>
+                            <div class="col-lg-6 my-auto" bis_skin_checked="1"><img
+                                    src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/06/hero-cnc-1.jpg.webp"
+                                    class="not-lazy mix-blend-lighten" alt="Kahraman CNC"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-top mob-pick pt-5 bg-dark overflow-hidden mob-design d-lg-none" bis_skin_checked="1">
+                    <div class="container px-m-24" bis_skin_checked="1">
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-12" bis_skin_checked="1">
+                                <div class="h1-put-jquery" bis_skin_checked="1">
+                                    <h1 class="fw-600 text-white h2">On-demand Custom CNC Machining Services</h1>
+                                </div>
+                                <div class="pt-3 pt-md-4 right-ul text-white mob-pick fs-14 ul-mt-5 h1-put-jquery-2"
+                                    bis_skin_checked="1">
+                                    <p>Online CNC machining service for rapid prototypes and production parts in metals
+                                        or plastics. Get instant quotes today, and order your custom CNC machined parts
+                                        at a better price.</p>
+                                    <ul>
+                                        <li>One-off CNC Prototypes</li>
+                                        <li>100K+ Mass Production Machining</li>
+                                        <li>Tolerance as tight as ±0.01 mm</li>
+                                        <li>Delivery in as little as 5 days</li>
+                                    </ul>
+                                </div>
+                                <div class="position-relative" bis_skin_checked="1">
+                                    <div class="pb-5" bis_skin_checked="1"><img class="lazy mix-blend-lighten w-100"
+                                            alt="Hero Cnc"
+                                            src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/06/hero-cnc-1-300x204.jpg.webp"
+                                            style=""></div>
+                                    <div class="position-absolute w-100 bottom-0 start-0 py-4 d-flex justify-content-center"
+                                        bis_skin_checked="1"><a class="btn btn-square btn-light fs-18 fw-500 bg-btn"
+                                            href="https://www.3erp.com/request-a-quote/">Upload Your Files <span
+                                                class="ps-2"><i class="fa-solid fa-arrow-right"
+                                                    aria-hidden="true"></i></span></a><a
+                                            title="youtube video play button"
+                                            class="btn btn-round btn-blue fw-500 bg-btn cicle-button ms-4 click-popup"
+                                            data-src="https://www.youtube.com/embed/Lj_U66Fnb-Q?autoplay=1" href="#"><i
+                                                class="fa-sharp fa-solid fa-play" aria-hidden="true"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-80 pt-4 max-width-1100 include-submenu" id="why-3erp"
+                data-title="Why 3ERP?" bis_skin_checked="1">
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-lg-6" bis_skin_checked="1">
+                        <div class="pb-4 h-50" bis_skin_checked="1"><img class="w-100 lazy h-100 object-fit-cover" alt="CNC İşleme makinesi işletimi" src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2024/03/ImportedPhoto_1711561184682-1-e1711599862588.jpg.webp" style=""></div>
+                        <div class="h-50" bis_skin_checked="1"><img class="w-100 lazy h-100 object-fit-cover" alt="Çelikte CNC İşleme" src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2024/03/ImportedPhoto_1711703103228-e1711721681212.jpg.webp" style=""></div>
+                    </div>
+                    <div class="col-lg-6 mb-4" bis_skin_checked="1">
+                        <h2 class="fs-28 fw-600 pr-lg-5">Why Use 3ERP for <br>Custom CNC Machining Services?</h2>
+                        <div class="mt-4 pr-lg-5" bis_skin_checked="1">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">3ERP mühendislere, ürün geliştiricilere,
+                                    tasarımcılara ve daha fazlasına özel bir CNC işleme hizmeti sağlar. Hızlı prototip
+                                    oluşturma, küçük seri işleme ve yüksek hacimli üretim sunuyoruz. Üretim ortağı
+                                    olarak 3ERP'yi seçmenizin nedenleri şunlardır. </font>
+                                <font style="vertical-align: inherit;">HAAS CNC frezeleri ve tornaları, Hexagon CMM'leri
+                                    ve Olympus XRF analizörünü içeren </font>
+                                <font style="vertical-align: inherit;">şirket içi </font>
+                            </font><strong>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">gelişmiş ekipmanlarla</font>
+                                </font>
+                            </strong>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;"> . CNC parçalarınızın doğru malzeme ve boyutta
+                                    üretildiğini garanti edebiliriz. </font>
+                            </font><strong>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Deneyimli mühendislerimiz,</font>
+                                </font>
+                            </strong>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;"> çeşitli </font>
+                                <font style="vertical-align: inherit;">endüstrilerdeki önceki birçok CNC işleme
+                                    projesinden zengin ve derin deneyimler edinmiştir. Karmaşık geometrilere sahip her
+                                    türlü dar toleranslı CNC ile işlenmiş parçayı işleyebilirler. </font>
+                                <font style="vertical-align: inherit;">Parçaların spesifikasyona göre üretildiğinden ve
+                                    kusursuz olduğundan emin olmak için gönderilmeye hazır olduklarında kalite kontrol
+                                    departmanımız tarafından tam olarak denetlenen </font>
+                            </font><strong>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">tutarlı, yüksek kaliteli</font>
+                                </font>
+                            </strong>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;"> CNC parçaları sunuyoruz . </font>
+                                <font style="vertical-align: inherit;">Kendi bünyemizdeki tesisleri ve nitelikli üretim
+                                    ağımızı kullanarak, </font>
+                            </font><strong>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">hızlı</font>
+                                </font>
+                            </strong>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;"> CNC işleme hizmetleri sunabilecek yeterli
+                                    kapasiteye sahibiz .</font>
+                            </font>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="container mt-80 pt-4 max-width-1100 include-submenu" id="what-cnc"
+                data-title="What is CNC?" bis_skin_checked="1">
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-lg-6" bis_skin_checked="1">
+                        <h2 class="fs-32 fw-500 pe-lg-5">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">CNC İşleme Nedir?</font>
+                            </font>
+                        </h2>
+                        <div class="mt-4 pe-lg-5" bis_skin_checked="1">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">CNC veya bilgisayarlı sayısal kontrollü
+                                        işleme, istenen geometri elde edilene kadar metal veya plastik bir iş
+                                        parçasından malzeme çıkarmak için otomatik, yüksek hızlı kesme aletleri
+                                        kullanan, yaygın olarak kullanılan bir üretim işlemidir. Standart CNC makineleri
+                                        3 eksenli, 4 eksenli ve 5 eksenli frezeleme makinelerini, torna tezgahlarını ve
+                                        yönlendiricileri içerir. Makineler, CNC parçalarının nasıl kesildiğine göre
+                                        değişiklik gösterebilir; takım hareket ederken iş parçası yerinde kalabilir, iş
+                                        parçası döndürülürken ve hareket ettirilirken takım yerinde kalabilir veya hem
+                                        kesme takımı hem de iş parçası birlikte hareket edebilir</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Bir makinist, 3D dosya olarak da adlandırılan
+                                        CAD (bilgisayar destekli tasarım) modelini aldığında, 3D dosyayı temel alarak
+                                        takım yollarını programlamakla başlayacaktır. Yetenekli bir makinist, CNC işleme
+                                        maliyetini düşürmenin yanı sıra sıkı tolerans elde etmek için takım yollarını
+                                        nasıl optimize edeceğini bilir. CNC makineleri metal alaşımları, plastik, ahşap,
+                                        taş, seramik ve daha fazlası gibi hemen hemen her türlü malzemeyi kesebilir.
+                                        Otomotiv, robotik, medikal, havacılık, elektronik ve endüstriyel dahil olmak
+                                        üzere hemen hemen her endüstri için ihtiyaç duyulan özel işlenmiş parçalar
+                                        üretiyoruz. 3ERP, CNC işleme hizmetleri sağlar ve ticari alüminyum, çelik,
+                                        paslanmaz çelik, ABS, asetalden gelişmiş titanyum, Inconel'e ve Teflon, PPS, PEI
+                                        ve PEEK gibi mühendislik plastiklerine kadar çeşitli malzemeler için özel CNC
+                                        teklifleri sunar.</font>
+                                </font>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" bis_skin_checked="1">
+                        <div class="pb-4 h-50" bis_skin_checked="1"><img class="w-100 lazy h-100 object-fit-cover"
+                                alt="CNC İşleme makinesi işletimi"
+                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2024/03/ImportedPhoto_1711561184682-1-e1711599862588.jpg.webp"
+                                style=""></div>
+                        <div class="h-50" bis_skin_checked="1"><img class="w-100 lazy h-100 object-fit-cover"
+                                alt="Çelikte CNC İşleme"
+                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2024/03/ImportedPhoto_1711703103228-e1711721681212.jpg.webp"
+                                style=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-container bg-f5f5f5 mt-80 pt-80 include-submenu" id="services"
+                data-title="Capabilities" bis_skin_checked="1">
+                <style></style>
+                <div class="services-container" bis_skin_checked="1">
+                    <div class="container px-m-24" bis_skin_checked="1">
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-lg-6 mb-4" bis_skin_checked="1">
+                                <h2 class="fs-40 fw-600">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">CNC İşleme </font>
+                                    </font><br>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Yeteneklerimiz</font>
+                                    </font>
+                                </h2>
+                            </div>
+                            <div class="col-lg-6" bis_skin_checked="1">
+                                <div class="fs-20 mb-4" bis_skin_checked="1">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Zorluklara karşı her zaman hazırız</font>
+                                    </font><light-blue>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">sıkı toleranslar</font>
+                                        </font>
+                                    </light-blue>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Ve</font>
+                                    </font><light-blue>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">karmaşık CNC işlenmiş parçalar</font>
+                                        </font>
+                                    </light-blue>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">. Hassas CNC işleme hizmetlerimizi
+                                            deneyin ve bir sonraki memnun müşterimiz olun.</font>
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5" bis_skin_checked="1">
+                            <div class="col-lg-4 mb-4" bis_skin_checked="1">
+                                <div class="h-100 bg-gray overflow-hidden d-flex flex-column justify-content-between hover-shadow position-relative"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div class="img-tile-ser" style="" bis_skin_checked="1"><img
+                                                class="w-100 h-100 lazy object-fit-cover"
+                                                alt="CNC Frezeleme özellikli görsel"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2022/03/cnc-machining-img-e1648659074393.jpeg.webp"
+                                                style=""></div>
+                                        <div class="px-1 px-md-4 mx-3 pt-3 mt-2 mb-4 pb-2" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600 color-light-blue">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">CNC Freze Hizmeti</font>
+                                                </font>
+                                            </h3>
+                                            <div class="fs-14 mt-3 text-white" bis_skin_checked="1">
+                                                <p>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Şirket içi 32 set 5
+                                                            eksenli CNC freze makinesiyle, karmaşık geometrilere sahip
+                                                            plastik ve metal parçaları kolayca frezelememize olanak
+                                                            tanıyor. Ayrıca 3, 4 eksen freze tezgahlarımızı kullanarak
+                                                            düşük maliyetli işlenmiş parçalar da sunmaktayız.</font>
+                                                    </font>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4" bis_skin_checked="1">
+                                <div class="h-100 bg-gray overflow-hidden d-flex flex-column justify-content-between hover-shadow position-relative"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div class="img-tile-ser" style="" bis_skin_checked="1"><img
+                                                class="w-100 h-100 lazy object-fit-cover"
+                                                alt="CNC Tornalama'nın öne çıkan görseli"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/06/WechatIMG7106-405x270.jpeg.webp"
+                                                style=""></div>
+                                        <div class="px-1 px-md-4 mx-3 pt-3 mt-2 mb-4 pb-2" bis_skin_checked="1"><a
+                                                href="https://www.3erp.com/services/cnc-machining/cnc-turning/"
+                                                class="hover-unset"></a>
+                                            <h3 class="fs-20 fw-600 color-light-blue"><a
+                                                    href="https://www.3erp.com/services/cnc-machining/cnc-turning/"
+                                                    class="hover-unset">
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">CNC Torna Hizmeti</font>
+                                                    </font>
+                                                </a></h3>
+                                            <div class="fs-14 mt-3 text-white" bis_skin_checked="1">
+                                                <p>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">CNC tornalama, solucan
+                                                            milleri gibi plastik ve metal çubuklardan veya tüplerden
+                                                            yuvarlak bileşenler üretmek için daha verimli bir yöntemdir.
+                                                            Tahrikli takımlamayla birleştirildiğinde frezelenmiş
+                                                            geometriler aynı anda elde edilebilir.</font>
+                                                    </font>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4" bis_skin_checked="1">
+                                <div class="h-100 bg-gray overflow-hidden d-flex flex-column justify-content-between hover-shadow position-relative"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div class="img-tile-ser" style="" bis_skin_checked="1"><img
+                                                class="w-100 h-100 lazy object-fit-cover"
+                                                alt="EDM ve Tel Kesme özellikli görsel"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2024/02/media_20240228_165843_6112817783104984902-scaled-e1709125344274-405x270.jpg.webp"
+                                                style=""></div>
+                                        <div class="px-1 px-md-4 mx-3 pt-3 mt-2 mb-4 pb-2" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600 color-light-blue">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">EDM ve Tel Kesme Hizmeti
+                                                    </font>
+                                                </font>
+                                            </h3>
+                                            <div class="fs-14 mt-3 text-white" bis_skin_checked="1">
+                                                <p>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">EDM ve tel kesme, keskin
+                                                            köşeler, alttan kesmeler için tasarım elde etmek ve iş
+                                                            parçalarından gereksiz malzemeleri çıkarmak için bakır,
+                                                            grafit desen veya molibden tel kullanan CNC işleme
+                                                            süreçlerinden biridir. EDM aynı zamanda hızlı takımlama ve
+                                                            üretim kalıp yapımı için de yaygın olarak kullanılmaktadır.
+                                                        </font>
+                                                    </font>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4" bis_skin_checked="1">
+                                <div class="h-100 bg-gray overflow-hidden d-flex flex-column justify-content-between hover-shadow position-relative"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div class="img-tile-ser" style="" bis_skin_checked="1"><img
+                                                class="w-100 h-100 lazy object-fit-cover"
+                                                alt="CNC Taşlama özellikli görsel"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/uploads/2024/02/Precision-Grinding-e1586858094908.jpeg-405x270.webp"
+                                                style=""></div>
+                                        <div class="px-1 px-md-4 mx-3 pt-3 mt-2 mb-4 pb-2" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600 color-light-blue">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">CNC Taşlama Hizmeti</font>
+                                                </font>
+                                            </h3>
+                                            <div class="fs-14 mt-3 text-white" bis_skin_checked="1">
+                                                <p>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Süper düz yüzeyli bir
+                                                            parçaya veya toleranslarda OD ve ID +/- 0,005 mm gerektiren
+                                                            yuvarlak bir parçaya ihtiyacınız varsa, CNC taşlama işleme
+                                                            hizmetimiz bu tür parçalar için üretim ihtiyaçlarınızı en
+                                                            iyi şekilde karşılayacaktır.</font>
+                                                    </font>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4" bis_skin_checked="1">
+                                <div class="h-100 bg-gray overflow-hidden d-flex flex-column justify-content-between hover-shadow position-relative"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div class="img-tile-ser" style="" bis_skin_checked="1"><img
+                                                class="w-100 h-100 lazy object-fit-cover"
+                                                alt="Swiss Machining'in öne çıkan görseli"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2024/02/media_20240228_165843_8627401770851373808-405x270.jpg.webp"
+                                                style=""></div>
+                                        <div class="px-1 px-md-4 mx-3 pt-3 mt-2 mb-4 pb-2" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600 color-light-blue">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">İsviçre İşleme Hizmeti</font>
+                                                </font>
+                                            </h3>
+                                            <div class="fs-14 mt-3 text-white" bis_skin_checked="1">
+                                                <p>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">İsviçre işleme, karmaşık
+                                                            veya ince bileşenler üretmenin etkili bir yoludur. Hem
+                                                            tahrikli takımı hem de iş parçasını hareket ettirerek iş
+                                                            parçası tutucusuna yakın olan malzemeyi her zaman
+                                                            kesebiliriz. Geleneksel CNC torna tezgahına kıyasla
+                                                            deformasyonu önlemek için.</font>
+                                                    </font>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4" bis_skin_checked="1">
+                                <div class="h-100 bg-gray overflow-hidden d-flex flex-column justify-content-between hover-shadow position-relative"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div class="img-tile-ser" style="" bis_skin_checked="1"><img
+                                                class="w-100 h-100 lazy object-fit-cover"
+                                                alt="CNC Yönlendirme özellikli görsel"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2024/03/ImportedPhoto_1709427190151-405x270.jpg.webp"
+                                                style=""></div>
+                                        <div class="px-1 px-md-4 mx-3 pt-3 mt-2 mb-4 pb-2" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600 color-light-blue">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">CNC Yönlendirme Hizmeti
+                                                    </font>
+                                                </font>
+                                            </h3>
+                                            <div class="fs-14 mt-3 text-white" bis_skin_checked="1">
+                                                <p>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Mühendislik plastikleri
+                                                            veya metallerindeki parçalar için standart frezeleme
+                                                            hizmetinin yanı sıra, EPS köpük, EVA, ahşap gibi yumuşak
+                                                            malzemelerdeki prototipler ve parçalar için CNC yönlendirme
+                                                            hizmeti de sunuyoruz.</font>
+                                                    </font>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-80" bis_skin_checked="1"></div>
+            </div>
+            <div class="mt-80 include-submenu" id="machining-info" data-title="Tolerances, Materials &amp; Finishes"
+                bis_skin_checked="1">
+                <div bis_skin_checked="1">
+                    <div class="container" bis_skin_checked="1">
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-12 text-center" bis_skin_checked="1">
+                                <h2 class="fs-32 fw-600">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">CNC İşleme Toleransları, Malzemeler ve
+                                            Yüzey Kaplamaları</font>
+                                    </font>
+                                </h2>
+                                <div class="mt-40" bis_skin_checked="1"></div>
+                            </div>
+                        </div>
+                        <div class="row mt-3" bis_skin_checked="1">
+                            <div class="col-lg-1" bis_skin_checked="1"></div>
+                            <div class="col-lg-3" bis_skin_checked="1"><img alt="Banner1" class="lazy w-100"
+                                    src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2022/11/banner1.jpg.webp"
+                                    style=""></div>
+                            <div class="col-lg-1" bis_skin_checked="1"></div>
+                            <div class="col-lg-6 my-auto" bis_skin_checked="1">
+                                <h3 class="fs-20 fw-600">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Toleranslar ve Standartlar</font>
+                                    </font>
+                                </h3>
+                                <div class="fs-16 opaicty-75 mt-3" bis_skin_checked="1">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Geniş CNC freze ve torna yelpazemiz ile
+                                            standart toleranslı CNC işlenmiş parçaları en ekonomik fiyatla ve üst düzey
+                                            ürünler için </font>
+                                    </font><a href="https://www.3erp.com/services/cnc-machining/precision-machining/">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">CNC işleme hassas parçalarını</font>
+                                        </font>
+                                    </a>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;"> sağlayabilmekteyiz . </font>
+                                        <font style="vertical-align: inherit;">3ERP ile çalışırken tüm parçaların
+                                            spesifikasyonlarınıza göre üretileceğini garanti ederiz. 2D çizimler mevcut
+                                            değilse ISO 2768 ile de belirtebilirsiniz.</font>
+                                    </font>
+                                </div>
+                                <div class="mt-40" bis_skin_checked="1"><a
+                                        class="btn btn-square btn-blue fw-500 bg-btn fs-14 px-3 py-2"
+                                        href="/services/cnc-machining/tolerances-and-standards/"
+                                        alt="Toleranslar ve Standartlar">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Toleransları ve Standartları
+                                                Görüntüle</font>
+                                        </font>
+                                        <span class="ps-2 align-middle"><i class="ri-arrow-right-line"></i></span>
+                                    </a></div>
+                            </div>
+                            <div class="col-lg-1" bis_skin_checked="1"></div>
+                        </div>
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-lg-1" bis_skin_checked="1"></div>
+                            <div class="col-lg-10" bis_skin_checked="1">
+                                <hr class="mt-3 mb-0">
+                            </div>
+                        </div>
+                        <div class="row mt-3" bis_skin_checked="1">
+                            <div class="col-lg-1" bis_skin_checked="1"></div>
+                            <div class="col-lg-3" bis_skin_checked="1"><img alt="1701959685870" class="lazy w-100"
+                                    src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/12/1701959685870-405x270.jpeg.webp"
+                                    style=""></div>
+                            <div class="col-lg-1" bis_skin_checked="1"></div>
+                            <div class="col-lg-6 my-auto" bis_skin_checked="1">
+                                <h3 class="fs-20 fw-600">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">İşlenebilir Malzemeler</font>
+                                    </font>
+                                </h3>
+                                <div class="fs-16 opaicty-75 mt-3" bis_skin_checked="1">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">ABS, POM, PEEK, paslanmaz çelik, pirinç,
+                                            bakır ve daha fazlası gibi çok çeşitli endüstriyel sınıf CNC işleme
+                                            malzemeleri, özel parçalar için kullanılabilir ve size özel parçaların
+                                            prototiplerini ve üretim süreçlerini tamamlamak için birçok malzeme seçimi
+                                            seçeneği sunar. </font>
+                                    </font><a href="/services/cnc-machining/plastic-machining/">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Plastik işleme</font>
+                                        </font>
+                                    </a>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;"> ve </font>
+                                    </font><a href="/services/cnc-machining/aluminum-machining/">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">metal işleme</font>
+                                        </font>
+                                    </a>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;"> ürünlerimiz hakkında daha fazla bilgi
+                                            edinin </font>
+                                        <font style="vertical-align: inherit;">.</font>
+                                    </font>
+                                </div>
+                                <div class="mt-40" bis_skin_checked="1"><a
+                                        class="btn btn-square btn-blue fw-500 bg-btn fs-14 px-3 py-2"
+                                        href="/services/cnc-machining/materials/" alt="İşlenebilir Malzemeler">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Malzemeleri Görüntüle</font>
+                                        </font>
+                                        <span class="ps-2 align-middle"><i class="ri-arrow-right-line"></i></span>
+                                    </a></div>
+                            </div>
+                            <div class="col-lg-1" bis_skin_checked="1"></div>
+                        </div>
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-lg-1" bis_skin_checked="1"></div>
+                            <div class="col-lg-10" bis_skin_checked="1">
+                                <hr class="mt-3 mb-0">
+                            </div>
+                        </div>
+                        <div class="row mt-3" bis_skin_checked="1">
+                            <div class="col-lg-1" bis_skin_checked="1"></div>
+                            <div class="col-lg-3" bis_skin_checked="1"><img alt="1701960307245" class="lazy w-100"
+                                    src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/12/1701960307245-405x270.jpeg.webp"
+                                    style=""></div>
+                            <div class="col-lg-1" bis_skin_checked="1"></div>
+                            <div class="col-lg-6 my-auto" bis_skin_checked="1">
+                                <h3 class="fs-20 fw-600">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Yüzey Kaplamaları</font>
+                                    </font>
+                                </h3>
+                                <div class="fs-16 opaicty-75 mt-3" bis_skin_checked="1">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">3ERP, boncuk püskürtmeli, anodize (tip
+                                            ii, tip iii), kromlama, toz kaplama, çinko kaplama, nikel kaplama gibi çok
+                                            çeşitli yüksek düzeyde yüzey kaplamaları sunar. Yalnızca yaygın yüzey
+                                            bitirme seçeneklerinden bazılarını listeliyoruz. CNC ile işlenmiş parçalar
+                                            için daha fazla yüzey kaplama seçeneği vardır.</font>
+                                    </font>
+                                </div>
+                                <div class="mt-40" bis_skin_checked="1"><a
+                                        class="btn btn-square btn-blue fw-500 bg-btn fs-14 px-3 py-2"
+                                        href="/services/cnc-machining/finishes/" alt="Yüzey Kaplamaları">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Kaplamaları Görüntüle</font>
+                                        </font>
+                                        <span class="ps-2 align-middle"><i class="ri-arrow-right-line"></i></span>
+                                    </a></div>
+                            </div>
+                            <div class="col-lg-1" bis_skin_checked="1"></div>
+                        </div>
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-lg-1" bis_skin_checked="1"></div>
+                            <div class="col-lg-10" bis_skin_checked="1">
+                                <hr class="mt-3 mb-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-80" bis_skin_checked="1">
+                <div class="pro-pto right-ul" bis_skin_checked="1">
+                    <div class="container px-m-24" bis_skin_checked="1">
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-12" bis_skin_checked="1">
+                                <h2 class="fs-32 fw-500 text-center">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Konseptten Üretime</font>
+                                    </font>
+                                </h2>
+                                <div class="max-width-750 mx-auto fs-16 mt-4 pt-2" bis_skin_checked="1">
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">CNC işleme, ister birkaç parçaya
+                                                ister son kullanılan üretim parçaları olarak 10000'den fazla birime
+                                                ihtiyacınız olsun, ideal bir üretim sürecidir. İşte 3ERP'de mevcut olan
+                                                özel CNC hizmetleri.</font>
+                                        </font>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-40" bis_skin_checked="1">
+                            <div class="col-lg-4 mb-4" bis_skin_checked="1">
+                                <div bis_skin_checked="1"><img class="w-100 lazy object-fit-cover"
+                                        alt="Hızlı prototipleme" height="350px"
+                                        src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/04/rapid-prototyping-500x400.jpeg.webp"
+                                        style=""></div>
+                                <h3 class="mt-3 pt-1 fs-20 fw-600">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Prototip İşleme</font>
+                                    </font>
+                                </h3>
+                                <div class="fs-16 mt-3" bis_skin_checked="1">
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">3ERP'den CNC ile işlenmiş
+                                                prototiplerinizi günler içinde tamamlayabilirsiniz, süper çekim teslim
+                                                süreleri tasarımı hızlı bir şekilde doğrulamanıza olanak tanır.</font>
+                                        </font>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Anlık teklifler</font>
+                                            </font>
+                                        </li>
+                                        <li>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Anında DFM geri bildirimi</font>
+                                            </font>
+                                        </li>
+                                        <li>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Mükemmel kalite</font>
+                                            </font>
+                                        </li>
+                                        <li>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Kısa teslim süresi</font>
+                                            </font>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4" bis_skin_checked="1">
+                                <div bis_skin_checked="1"><img class="w-100 lazy object-fit-cover" alt="Kısık ses"
+                                        height="350px"
+                                        src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/04/low-volume-500x400.jpeg.webp"
+                                        style=""></div>
+                                <h3 class="mt-3 pt-1 fs-20 fw-600">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Düşük Hacimli İşleme</font>
+                                    </font>
+                                </h3>
+                                <div class="fs-16 mt-3" bis_skin_checked="1">
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">CNC işleme, belirli türdeki parçaları
+                                                küçük hacimli veya orta miktarda üretmenin uygun maliyetli bir yoludur.
+                                                Örneğin 100 adetten 1000 adete kadar.</font>
+                                        </font>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Daha az maliyet</font>
+                                            </font>
+                                        </li>
+                                        <li>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Üretim düzeyinde kalite</font>
+                                            </font>
+                                        </li>
+                                        <li>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Kısa teslim süresi</font>
+                                            </font>
+                                        </li>
+                                        <li>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Yatırım yapmadan önce piyasayı
+                                                    test edin</font>
+                                            </font>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4" bis_skin_checked="1">
+                                <div bis_skin_checked="1"><img class="w-100 lazy object-fit-cover" alt="Üretme"
+                                        height="350px"
+                                        src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/07/production-500x400.png.webp"
+                                        style=""></div>
+                                <h3 class="mt-3 pt-1 fs-20 fw-600">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Üretim İşleme</font>
+                                    </font>
+                                </h3>
+                                <div class="fs-16 mt-3" bis_skin_checked="1">
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Büyük hacimli üretim işleme için CNC
+                                                makineleri ve robotları kullanmak, ağır işçilikten kaçınmamızı sağlayan
+                                                en iyi seçenektir. Maliyeti önemli ölçüde azaltın.</font>
+                                        </font>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">DFM optimizasyonu için deneyimli
+                                                    mühendisler</font>
+                                            </font>
+                                        </li>
+                                        <li>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Sizin saat diliminizde çalışan
+                                                    profesyonel bir proje yöneticisi</font>
+                                            </font>
+                                        </li>
+                                        <li>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">İlk makale incelemesi</font>
+                                            </font>
+                                        </li>
+                                        <li>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Garantili tutarlı kalite</font>
+                                            </font>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-80" bis_skin_checked="1">
+                <div class="mt-5" bis_skin_checked="1">
+                    <div class="cta-main" bis_skin_checked="1">
+                        <div class="container" bis_skin_checked="1">
+                            <div class="bg-black" bis_skin_checked="1">
+                                <div class="row align-items-center" bis_skin_checked="1">
+                                    <div class="col-md-1" bis_skin_checked="1"></div>
+                                    <div class="col-lg-8" bis_skin_checked="1">
+                                        <div class="bg-cta-frame pt-96 pb-120 text-lg-start lazy" bis_skin_checked="1" style="background-image: url(&quot;https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/uploads/2023/03/cta-bg.svg&quot;);">
+                                            <div class="fs-32 fw-500 text-white" bis_skin_checked="1">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Parçalarınızı </font>
+                                                </font><br>
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">bugün üretime alın</font>
+                                                </font>
+                                                <span class="color-green fs-12"><i class="ri-square-line" aria-hidden="true"></i></span>
+                                            </div>
+                                            <div class="fs-16 mt-3 text-white opacity-5" bis_skin_checked="1">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Tüm bilgiler ve yüklemeler güvenli ve
+                                                        gizlidir.</font>
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 pl-1 text-center text-lg-start pb-4" bis_skin_checked="1"><a class="btn btn-round btn-green fw-500 bg-btn" href="https://www.3erp.com/request-a-quote/">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;"> Anında İletişime Geçin </font>
+                                                <i class="ri-whatsapp-fill" style="size: 32px;"></i>
+                                            </font>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-f5f5f5 mt-80 pt-80 pb-5 include-submenu" id="applications-tiles" data-title="Applications"
+                bis_skin_checked="1">
+                <div bis_skin_checked="1">
+                    <div class="container px-m-24" bis_skin_checked="1">
+                        <div class="row align-items-center" bis_skin_checked="1">
+                            <div class="col-12" bis_skin_checked="1">
+                                <h2 class="fs-32 text-center fw-500">CNC Machining for Various Industrial Applications
+                                </h2>
+                                <div class="max-width-750 mx-auto fs-16 mt-3 pt-2 text-center" bis_skin_checked="1">Our
+                                    CNC machining service have been qualified by worldwide customers from different
+                                    industries. We have been offering CNC machined parts for various industries which
+                                    include the below list and more. </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-64 px-m-24 carousel slide position-relative" id="industryslider"
+                        data-bs-interval="false" bis_skin_checked="1"><button
+                            class="carousel-control-prev d-md-none w-auto opacity-1 lazy-active fs-32 ms-2"
+                            type="button" data-bs-target="#industryslider" data-bs-slide="prev"><span
+                                class="color-light-blue"><i class="fa-sharp fa-solid fa-circle-arrow-left"
+                                    aria-hidden="true"></i></span></button><button
+                            class="carousel-control-next d-md-none w-auto opacity-1 lazy-active fs-32 me-2"
+                            type="button" data-bs-target="#industryslider" data-bs-slide="next"><span
+                                class="color-light-blue"><i class="fa-sharp fa-solid fa-circle-arrow-right"
+                                    aria-hidden="true"></i></span></button>
+                        <div class="carousel-inner px-4" bis_skin_checked="1">
+                            <div class="carousel-item active spl-slide-m d-md-none" bis_skin_checked="1">
+                                <div class="h-100 overflow-hidden d-flex flex-column justify-content-between bg-white shadow-sm"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div bis_skin_checked="1"><img class="lazy w-100 other-lazy" alt="Automotive"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/09/interior-parts-img-405x270.jpg.webp"
+                                                style=""></div>
+                                        <div class="mt-3 px-3" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600">Automotive</h3>
+                                        </div>
+                                        <div class="mt-3 opacity-75 opacity-75 fs-16 px-3" bis_skin_checked="1">
+                                            <p>Large size parts such as CNC machined ABS bumpers, PC/ABS dashboards and
+                                                precise automotive components like reflectors, lenses, steering wheel
+                                                components, engine, transmission.</p>
+                                        </div>
+                                    </div>
+                                    <div class="px-3 pb-3" bis_skin_checked="1"><a
+                                            href="https://www.3erp.com/industries/automotive/" class="fw-500">Learn
+                                            More</a></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item spl-slide-m d-md-none" bis_skin_checked="1">
+                                <div class="h-100 overflow-hidden d-flex flex-column justify-content-between bg-white shadow-sm"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div bis_skin_checked="1"><img class="lazy w-100 other-lazy"
+                                                alt="Robotics and Automations"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/10/industrial-robotic-arm-e1697008682588-405x270.png.webp"
+                                                style=""></div>
+                                        <div class="mt-3 px-3" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600">Robotics and Automations</h3>
+                                        </div>
+                                        <div class="mt-3 opacity-75 opacity-75 fs-16 px-3" bis_skin_checked="1">
+                                            <p>Manipulator parts, actuators, end effectors, motors, automatic control
+                                                equipment, clamps, and housings for the robotics &amp; automation
+                                                industry.</p>
+                                        </div>
+                                    </div>
+                                    <div class="px-3 pb-3" bis_skin_checked="1"><a
+                                            href="https://www.3erp.com/industries/robotics-and-automations/"
+                                            class="fw-500">Learn More</a></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item spl-slide-m d-md-none" bis_skin_checked="1">
+                                <div class="h-100 overflow-hidden d-flex flex-column justify-content-between bg-white shadow-sm"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div bis_skin_checked="1"><img class="lazy w-100 other-lazy" alt="Medical"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/06/medical-e1687610030364-405x270.jpg.webp"
+                                                style=""></div>
+                                        <div class="mt-3 px-3" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600">Medical</h3>
+                                        </div>
+                                        <div class="mt-3 opacity-75 opacity-75 fs-16 px-3" bis_skin_checked="1">
+                                            <p>Components for medical needs such as stainless steel or titanium bone
+                                                plate, prostheses, respiratory devices, handheld devices, diagnosis
+                                                equipment, anatomical models, and surgical instruments.</p>
+                                        </div>
+                                    </div>
+                                    <div class="px-3 pb-3" bis_skin_checked="1"><a
+                                            href="https://www.3erp.com/industries/medical/" class="fw-500">Learn
+                                            More</a></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item spl-slide-m d-md-none" bis_skin_checked="1">
+                                <div class="h-100 overflow-hidden d-flex flex-column justify-content-between bg-white shadow-sm"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div bis_skin_checked="1"><img class="lazy w-100 other-lazy" alt="Aerospace"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/10/46820_16_9-schaeffler-aerospace-jet-engine_rwd_600-405x270.jpg.webp"
+                                                style=""></div>
+                                        <div class="mt-3 px-3" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600">Aerospace</h3>
+                                        </div>
+                                        <div class="mt-3 opacity-75 opacity-75 fs-16 px-3" bis_skin_checked="1">
+                                            <p>Aerospace engines, fuselages, turbines, brakes, tire parts, lighting
+                                                system, vacuum pumps, and fuel pumps parts.</p>
+                                        </div>
+                                    </div>
+                                    <div class="px-3 pb-3" bis_skin_checked="1"><a
+                                            href="https://www.3erp.com/industries/aerospace/" class="fw-500">Learn
+                                            More</a></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item spl-slide-m d-md-none" bis_skin_checked="1">
+                                <div class="h-100 overflow-hidden d-flex flex-column justify-content-between bg-white shadow-sm"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div bis_skin_checked="1"><img class="lazy w-100 other-lazy"
+                                                alt="Consumer Products"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/uploads/2023/10/image10-405x270.webp"
+                                                style=""></div>
+                                        <div class="mt-3 px-3" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600">Consumer Products</h3>
+                                        </div>
+                                        <div class="mt-3 opacity-75 opacity-75 fs-16 px-3" bis_skin_checked="1">
+                                            <p>Consumer products such as electronics device housings, buttons, handles,
+                                                knobs, switches, wearable digital devices, cookware products, sporting
+                                                equipment.</p>
+                                        </div>
+                                    </div>
+                                    <div class="px-3 pb-3" bis_skin_checked="1"><a
+                                            href="https://www.3erp.com/industries/consumer-products/"
+                                            class="fw-500">Learn More</a></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item spl-slide-m d-md-none" bis_skin_checked="1">
+                                <div class="h-100 overflow-hidden d-flex flex-column justify-content-between bg-white shadow-sm"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div bis_skin_checked="1"><img class="lazy w-100 other-lazy" alt="Energy"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/10/wind-power-405x270.jpg.webp"
+                                                style=""></div>
+                                        <div class="mt-3 px-3" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600">Energy</h3>
+                                        </div>
+                                        <div class="mt-3 opacity-75 opacity-75 fs-16 px-3" bis_skin_checked="1">
+                                            <p>Energy industry components such as heat exchangers, valves, pipes, pumps
+                                                &amp; accessories, hydraulic components, battery components, solar panel
+                                                parts, frames, and impellers.</p>
+                                        </div>
+                                    </div>
+                                    <div class="px-3 pb-3" bis_skin_checked="1"><a
+                                            href="https://www.3erp.com/industries/energy/" class="fw-500">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item spl-slide-m d-md-none" bis_skin_checked="1">
+                                <div class="h-100 overflow-hidden d-flex flex-column justify-content-between bg-white shadow-sm"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div bis_skin_checked="1"><img class="lazy w-100 other-lazy"
+                                                alt="Industrial Machinery"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/11/custom-made-machines-manufacturing-1024x576-1-405x270.jpg.webp"
+                                                style=""></div>
+                                        <div class="mt-3 px-3" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600">Industrial Machinery</h3>
+                                        </div>
+                                        <div class="mt-3 opacity-75 opacity-75 fs-16 px-3" bis_skin_checked="1">
+                                            <p>Electronic housings, conveyors, fasteners, connectors, generator
+                                                components, fixtures, machine and tool parts for industrial machinery.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="px-3 pb-3" bis_skin_checked="1"><a
+                                            href="https://www.3erp.com/industries/industrial-machinery/"
+                                            class="fw-500">Learn More</a></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item spl-slide-m d-md-none" bis_skin_checked="1">
+                                <div class="h-100 overflow-hidden d-flex flex-column justify-content-between bg-white shadow-sm"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div bis_skin_checked="1"><img class="lazy w-100 other-lazy" alt="Education"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/11/processed-b609fa63-fe40-434d-bf92-a37262c3abeb_RQj8NQYK-405x270.jpeg.webp"
+                                                style=""></div>
+                                        <div class="mt-3 px-3" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600">Education</h3>
+                                        </div>
+                                        <div class="mt-3 opacity-75 opacity-75 fs-16 px-3" bis_skin_checked="1">
+                                            <p>Actual models can be created for education needs, experimental equipment
+                                                such as engineering models，3ERP work with worldwide universities.</p>
+                                        </div>
+                                    </div>
+                                    <div class="px-3 pb-3" bis_skin_checked="1"><a
+                                            href="https://www.3erp.com/industries/education/" class="fw-500">Learn
+                                            More</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-lg-3 col-md-6 mb-5 cpy-spl-slide d-none d-md-block" bis_skin_checked="1">
+                                <div class="h-100 overflow-hidden d-flex flex-column justify-content-between bg-white shadow-sm"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div bis_skin_checked="1"><img class="lazy w-100 other-lazy" alt="Automotive"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/09/interior-parts-img-405x270.jpg.webp"
+                                                style=""></div>
+                                        <div class="mt-3 px-3" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600">Automotive</h3>
+                                        </div>
+                                        <div class="mt-3 opacity-75 opacity-75 fs-16 px-3" bis_skin_checked="1">
+                                            <p>Large size parts such as CNC machined ABS bumpers, PC/ABS dashboards and
+                                                precise automotive components like reflectors, lenses, steering wheel
+                                                components, engine, transmission.</p>
+                                        </div>
+                                    </div>
+                                    <div class="px-3 pb-3" bis_skin_checked="1"><a
+                                            href="https://www.3erp.com/industries/automotive/" class="fw-500">Learn
+                                            More</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-5 cpy-spl-slide d-none d-md-block" bis_skin_checked="1">
+                                <div class="h-100 overflow-hidden d-flex flex-column justify-content-between bg-white shadow-sm"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div bis_skin_checked="1"><img class="lazy w-100 other-lazy"
+                                                alt="Robotics and Automations"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/10/industrial-robotic-arm-e1697008682588-405x270.png.webp"
+                                                style=""></div>
+                                        <div class="mt-3 px-3" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600">Robotics and Automations</h3>
+                                        </div>
+                                        <div class="mt-3 opacity-75 opacity-75 fs-16 px-3" bis_skin_checked="1">
+                                            <p>Manipulator parts, actuators, end effectors, motors, automatic control
+                                                equipment, clamps, and housings for the robotics &amp; automation
+                                                industry.</p>
+                                        </div>
+                                    </div>
+                                    <div class="px-3 pb-3" bis_skin_checked="1"><a
+                                            href="https://www.3erp.com/industries/robotics-and-automations/"
+                                            class="fw-500">Learn More</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-5 cpy-spl-slide d-none d-md-block" bis_skin_checked="1">
+                                <div class="h-100 overflow-hidden d-flex flex-column justify-content-between bg-white shadow-sm"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div bis_skin_checked="1"><img class="lazy w-100 other-lazy" alt="Medical"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/06/medical-e1687610030364-405x270.jpg.webp"
+                                                style=""></div>
+                                        <div class="mt-3 px-3" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600">Medical</h3>
+                                        </div>
+                                        <div class="mt-3 opacity-75 opacity-75 fs-16 px-3" bis_skin_checked="1">
+                                            <p>Components for medical needs such as stainless steel or titanium bone
+                                                plate, prostheses, respiratory devices, handheld devices, diagnosis
+                                                equipment, anatomical models, and surgical instruments.</p>
+                                        </div>
+                                    </div>
+                                    <div class="px-3 pb-3" bis_skin_checked="1"><a
+                                            href="https://www.3erp.com/industries/medical/" class="fw-500">Learn
+                                            More</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-5 cpy-spl-slide d-none d-md-block" bis_skin_checked="1">
+                                <div class="h-100 overflow-hidden d-flex flex-column justify-content-between bg-white shadow-sm"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div bis_skin_checked="1"><img class="lazy w-100 other-lazy" alt="Aerospace"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/10/46820_16_9-schaeffler-aerospace-jet-engine_rwd_600-405x270.jpg.webp"
+                                                style=""></div>
+                                        <div class="mt-3 px-3" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600">Aerospace</h3>
+                                        </div>
+                                        <div class="mt-3 opacity-75 opacity-75 fs-16 px-3" bis_skin_checked="1">
+                                            <p>Aerospace engines, fuselages, turbines, brakes, tire parts, lighting
+                                                system, vacuum pumps, and fuel pumps parts.</p>
+                                        </div>
+                                    </div>
+                                    <div class="px-3 pb-3" bis_skin_checked="1"><a
+                                            href="https://www.3erp.com/industries/aerospace/" class="fw-500">Learn
+                                            More</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-5 cpy-spl-slide d-none d-md-block" bis_skin_checked="1">
+                                <div class="h-100 overflow-hidden d-flex flex-column justify-content-between bg-white shadow-sm"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div bis_skin_checked="1"><img class="lazy w-100 other-lazy"
+                                                alt="Consumer Products"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/uploads/2023/10/image10-405x270.webp"
+                                                style=""></div>
+                                        <div class="mt-3 px-3" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600">Consumer Products</h3>
+                                        </div>
+                                        <div class="mt-3 opacity-75 opacity-75 fs-16 px-3" bis_skin_checked="1">
+                                            <p>Consumer products such as electronics device housings, buttons, handles,
+                                                knobs, switches, wearable digital devices, cookware products, sporting
+                                                equipment.</p>
+                                        </div>
+                                    </div>
+                                    <div class="px-3 pb-3" bis_skin_checked="1"><a
+                                            href="https://www.3erp.com/industries/consumer-products/"
+                                            class="fw-500">Learn More</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-5 cpy-spl-slide d-none d-md-block" bis_skin_checked="1">
+                                <div class="h-100 overflow-hidden d-flex flex-column justify-content-between bg-white shadow-sm"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div bis_skin_checked="1"><img class="lazy w-100 other-lazy" alt="Energy"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/10/wind-power-405x270.jpg.webp"
+                                                style=""></div>
+                                        <div class="mt-3 px-3" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600">Energy</h3>
+                                        </div>
+                                        <div class="mt-3 opacity-75 opacity-75 fs-16 px-3" bis_skin_checked="1">
+                                            <p>Energy industry components such as heat exchangers, valves, pipes, pumps
+                                                &amp; accessories, hydraulic components, battery components, solar panel
+                                                parts, frames, and impellers.</p>
+                                        </div>
+                                    </div>
+                                    <div class="px-3 pb-3" bis_skin_checked="1"><a
+                                            href="https://www.3erp.com/industries/energy/" class="fw-500">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-5 cpy-spl-slide d-none d-md-block" bis_skin_checked="1">
+                                <div class="h-100 overflow-hidden d-flex flex-column justify-content-between bg-white shadow-sm"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div bis_skin_checked="1"><img class="lazy w-100 other-lazy"
+                                                alt="Industrial Machinery"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/11/custom-made-machines-manufacturing-1024x576-1-405x270.jpg.webp"
+                                                style=""></div>
+                                        <div class="mt-3 px-3" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600">Industrial Machinery</h3>
+                                        </div>
+                                        <div class="mt-3 opacity-75 opacity-75 fs-16 px-3" bis_skin_checked="1">
+                                            <p>Electronic housings, conveyors, fasteners, connectors, generator
+                                                components, fixtures, machine and tool parts for industrial machinery.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="px-3 pb-3" bis_skin_checked="1"><a
+                                            href="https://www.3erp.com/industries/industrial-machinery/"
+                                            class="fw-500">Learn More</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-5 cpy-spl-slide d-none d-md-block" bis_skin_checked="1">
+                                <div class="h-100 overflow-hidden d-flex flex-column justify-content-between bg-white shadow-sm"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div bis_skin_checked="1"><img class="lazy w-100 other-lazy" alt="Education"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/11/processed-b609fa63-fe40-434d-bf92-a37262c3abeb_RQj8NQYK-405x270.jpeg.webp"
+                                                style=""></div>
+                                        <div class="mt-3 px-3" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600">Education</h3>
+                                        </div>
+                                        <div class="mt-3 opacity-75 opacity-75 fs-16 px-3" bis_skin_checked="1">
+                                            <p>Actual models can be created for education needs, experimental equipment
+                                                such as engineering models，3ERP work with worldwide universities.</p>
+                                        </div>
+                                    </div>
+                                    <div class="px-3 pb-3" bis_skin_checked="1"><a
+                                            href="https://www.3erp.com/industries/education/" class="fw-500">Learn
+                                            More</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section" id="footer-section"></div>
+
+    </div>
+
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
