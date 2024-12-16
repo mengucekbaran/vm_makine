@@ -117,7 +117,24 @@ video {
   min-height: 100%;
   min-width: 100%;
 }
+.btscls {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #222;
+  background: #fff;
+}
 
+.h-100 {
+  height: 100% !important;
+}
+.w-100 {
+  width: 100% !important;
+}
+.top-0 {
+  top: 0 !important;
+}
 /*=============== BACKGROUNDCOLORS===============*/
 .bg-dark {
   background-color: #1a1a1a !important;
@@ -134,7 +151,7 @@ video {
   mix-blend-mode: lighten;
 }
 
-.color-light-blue {
+.color-light-blue , light-blue {
   color: #0095da;
 }
 
@@ -173,7 +190,10 @@ light-pink {
   font-size: 20px;
   line-height: 28px;
 }
-
+.fs-24 {
+  font-size: 24px;
+  line-height: 32px;
+}
 .fs-28 {
   font-size: 28px;
   line-height: 36px;
@@ -182,6 +202,11 @@ light-pink {
 .fs-32 {
   font-size: 32px;
   line-height: 40px;
+}
+.fs-36 {
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0;
 }
 
 .fs-40 {
@@ -195,6 +220,21 @@ light-pink {
 
 .fw-500 {
   font-weight: 500;
+}
+.fw-700 {
+  font-weight: 700;
+}
+
+.position-relative{
+  position: relative !important;
+}
+.position-absolute{
+  position: absolute !important;
+}
+
+.btscls .mh-450-cover {
+  min-height: 450px;
+  object-fit: cover;
 }
 
 /*=============== it's for prototype text ===============*/
@@ -430,7 +470,7 @@ light-pink {
   padding-right: calc(var(--bs-gutter-x)* .5);
   padding-left: calc(var(--bs-gutter-x)* .5);
   max-width: 1120px;
-  margin-inline: 1.5rem;
+  /* margin-inline: 1.5rem; */
 }
 
 /*=============== HEADER ===============*/
@@ -852,8 +892,9 @@ light-pink {
 
 /*================== MOLD PAGE ==============*/
 .actual-image-container {
-  max-height: 1000px;
-  overflow: hidden;
+  width: 100%;
+  max-width: 100%; /* Konteyner taşmasını önler */
+  overflow: hidden; /* Taşmayı gizler */
 }
 
 .v-align-middle {
@@ -972,6 +1013,27 @@ light-pink {
 .faqs p {
   opacity: 0.9;
 }
+@media (min-width: 1200px) {
+  .btscls .container {
+      max-width: 1140px;
+  }
+}
+
+@media (min-width: 992px) {
+  .btscls .container {
+      max-width: 960px;
+  }
+}
+@media (min-width: 768px) {
+  .btscls .container {
+      max-width: 720px;
+  }
+}
+@media (min-width: 576px) {
+  .btscls .container {
+      max-width: 540px;
+  }
+}
 
 @media screen and (max-width: 768px) {
 
@@ -981,9 +1043,14 @@ light-pink {
     object-fit: cover;
   }
 
-
+  .v-align-middle{
+    top: 40%; /* Daha düşük bir yüzde ile yazıyı merkezde tutun */
+    transform: translate(-50%, -40%);
+    width: 80%; /* Daha küçük bir genişlik kullanarak yazıların sığmasını sağlayın */
+  }
   .black-back-p-40-shadow.v-align-middle {
     padding: 0 !important;
+
   }
 
   h1 {

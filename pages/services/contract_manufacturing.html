@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VM MAKİNE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== BOOTSTRAP ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--=============== FONTAWESOME ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--================== JQUERY================= -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+
+
+
+
+    <script>
+        // Document ready event
+        $(document).ready(function () {
+            // Navbarı yükleme
+            // *********************NAVBAR**************************//
+            $("#unite-header").load("../../includes/navbar.html", function () {
+                showMenu('nav-toggle', 'nav-menu');
+                // Navbar yüklendikten sonra initializeNavbar fonksiyonunu çağırın
+                initializeNavbar();
+            });
+            // *********************MAIN**************************//
+            // $("#main-section").load("../pages/home.html", function () {});
+            // *********************FOOTER**************************//
+            $("#footer-section").load("../../includes/footer.html", function () { });
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--=============== HEADER ===============-->
+        <div class="unite-header" id="unite-header"></div>
+        <div class="main-section" id="main-section">
+            <div class="titlebar m-0" data-rocket-lazy-bg-5251b62e-b121-4438-98b3-530417577c53="loaded"
+                data-rocket-lazy-bg-689a979a-d37f-47af-84ba-2f4fba9cdda9="loaded" bis_skin_checked="1">
+                <div class="row" bis_skin_checked="1">
+                    <div bis_skin_checked="1"></div>
+                    <div class="right" bis_skin_checked="1"></div>
+                </div>
+            </div>
+            <!-- <div class="actual-image-container position-relative" bis_skin_checked="1">
+                <img src="../../assets/images/sheet-metal-prototyping.jpg" width="100%;" alt="sheet metal prototyping service"> 
+                <div class="position-absolute black-back-p-40-shadow text-center v-align-middle" bis_skin_checked="1">
+                    <h1 class="color-white mb-0 text-center">Fason Hizmetlerimiz</h1>
+                    <div class="mt-4 fs-24 color-white" bis_skin_checked="1">Gelen talebe göre tüm ebatlarda parçaların fason
+                        işçilikleri tezgah parkurumuzda işlenmektedir.</div>
+                        
+                    <div class="mt-40 d-flex align-items-center justify-content-center" bis_skin_checked="1"><a href="../request-a-quote.html" class="d-flex align-items-center bg-pink py-2 px-4 btn-round color-unset hover-unset"><span><svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1" y="1" width="24" height="16" rx="1" stroke="white" stroke-width="2">
+                                    </rect>
+                                    <path d="M1.0918 2.11719L13.2607 9.52895L25.1254 2.11719" stroke="white" stroke-width="2" stroke-linejoin="round"></path>
+                                </svg></span><span class="fs-20 ms-2">Ucretsiz Bir Proje Incelemesi Ile Baslayin</span></a></div>
+                </div>
+            </div> -->
+            <div class="btscls position-relative" bis_skin_checked="1"><img fetchpriority="high"
+                    src="../../assets/images/sheet-metal-prototyping.jpg" width="100%;" class="mh-450-cover"
+                    alt="3erp Rapid Prototyping Services">
+                <div class="position-absolute w-100 h-100 top-0 left-0" bis_skin_checked="1">
+                    <div class="container text-white text-center h-100 d-flex flex-column justify-content-center"
+                        bis_skin_checked="1">
+                        <h1 class="fs-40"><strong>Fason Hizmetlerimiz</strong></h1>
+                        <div class="mt-4 fs-24" bis_skin_checked="1">Tum ebatlarda parcalar islenmektedir
+                        </div>
+                        <div class="mt-40 d-flex align-items-center justify-content-center" bis_skin_checked="1"><a
+                                href="../request-a-quote.html"
+                                class="d-flex align-items-center bg-pink py-2 px-4 btn-round color-unset hover-unset"><span><svg
+                                        width="26" height="18" viewBox="0 0 26 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1" y="1" width="24" height="16" rx="1" stroke="white" stroke-width="2">
+                                        </rect>
+                                        <path d="M1.0918 2.11719L13.2607 9.52895L25.1254 2.11719" stroke="white"
+                                            stroke-width="2" stroke-linejoin="round"></path>
+                                    </svg></span><span class="fs-20 ms-2">Proje Teklifi Al</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 
+            <div class="bgg-image bg-white" style="padding: 50px 0px;" bis_skin_checked="1">
+                <div class="bg-testi-white" style="background:none;" bis_skin_checked="1">
+                    <div class="container" bis_skin_checked="1">
+                        <div class="col-md-12" bis_skin_checked="1"> <br>
+                            <div class="" style="padding:0px 10px;" bis_skin_checked="1">
+                                <p>Need mold making supplies for mass production parts? 3ERP is known as the best mold
+                                    maker in China. With mold making facilities in house and resources from our
+                                    partners, we are able to provide plastic injection molds for both rigid plastics and
+                                    rubbers, metal injection molds for all types of precision stainless steel parts, and
+                                    pressure die casting molds for aluminum, magnesium and zinc. We offer low-cost local
+                                    production molds and high-quality exported molds for all your project needs.</p>
+                                <p>Whatever you need <a href="https://www.3erp.com/services/rapid-tooling/"
+                                        target="_blank" rel="noopener">prototype molds</a> for the short-run production,
+                                    or mass production molds for millions shots, 3ERP can handle them for you smoothly.
+                                </p>
+                            </div> <br>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="pt-64" bis_skin_checked="1">
+                <div class="container" bis_skin_checked="1">
+                    <div class="row" bis_skin_checked="1">
+                        <div class="col-12 text-center" bis_skin_checked="1">
+                            <h2 class="fs-36 fw-700">Fason Üretim Çözümleri</h2>
+                            <div class="" bis_skin_checked="1"><svg width="161" height="18" viewBox="0 0 161 18"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.1799 9.03075C25.3554 5.05927 58.149 -0.69739 145.971 2.75771C68.4173 -0.293401 46.6743 5.29866 24.6743 9.44946C58.026 7.65881 68.1743 -2.62006 159.335 9.44946C91.1743 1.71224 40.4211 8.98911 9.17432 16.3799"
+                                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                                        style="stroke: var(--first-pink-color);"></path>
+                                </svg></div>
+                            <div class="mt-2" bis_skin_checked="1">Fason üretim hizmetlerimiz, müşterilerimizin
+                                ihtiyaçlarına göre esnek, hızlı ve uygun maliyetli çözümler sunar. Geniş tezgah
+                                parkurumuz ve deneyimli ekibimiz sayesinde, her ölçekte ve farklı özelliklerde
+                                parçalarınızın işlenmesi titizlikle gerçekleştirilmektedir.
+
+                                Hizmetlerimiz arasında şunlar yer almaktadır:
+
+                                CNC Freze ve Torna İşlemleri: Yüksek hassasiyetle tasarlanmış metal parçalarınızın
+                                üretimi.
+                                Parça Montaj ve İşleme: Kompleks ürünlerde dahi yüksek kalite standartları
+                                sağlanmaktadır.
+                                Mekanik Parça İşleme: Alüminyum, paslanmaz çelik, demir gibi malzemelerin işlenmesi.
+                                Tecrübeli ekibimiz, talebinize göre prototip üretimden seri üretime kadar her aşamada
+                                destek sağlamaktadır. Ürünlerinizin yüksek kaliteyle işlenmesi ve ihtiyaçlarınıza tam
+                                uyum sağlaması için en yeni teknolojileri ve yöntemleri kullanıyoruz.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bgg-image bg-white pt-64 " bis_skin_checked="1">
+                <div class="bg-testi-white" bis_skin_checked="1">
+                    <div class="" bis_skin_checked="1">
+                        <div class="" bis_skin_checked="1">
+                            <div class="container" bis_skin_checked="1">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4" bis_skin_checked="1">
+                                        <div class="" bis_skin_checked="1">
+                                            <div class="pr-20" bis_skin_checked="1">
+                                                <picture>
+                                                    <source data-lazy-srcset="../../assets/images/fason.jpg"
+                                                        srcset="../../assets/images/fason.jpg">
+                                                    <img src="../../assets/images/fason.jpg"
+                                                        alt="3ERP sheet metal image" width="100%"
+                                                        class="webpexpress-processed entered lazyloaded"
+                                                        data-lazy-src="../../assets/images/fason.jpg"
+                                                        data-ll-status="loaded"><noscript><img
+                                                            src="../../assets/images/fason.jpg"
+                                                            alt="3ERP sheet metal image" width="100%"
+                                                            class="webpexpress-processed"></noscript>
+                                                </picture> <br><br><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8 " bis_skin_checked="1">
+                                        <div class="" bis_skin_checked="1">
+                                            <div class="tile-content-complete ptb-0" bis_skin_checked="1">
+                                                <div class="s-tile-title" bis_skin_checked="1">
+                                                    <h3 class="fs-36 fw-700">
+                                                        <light-blue>Fason Uretim</light-blue>
+                                                        'in Avantajlari
+                                                    </h3>
+                                                </div>
+                                                <div class="v-s-tile-content special-list-automative dots-before-h5"
+                                                    bis_skin_checked="1">
+                                                    <div class="row" bis_skin_checked="1">
+                                                        <div class="col-md-6 pr-20" bis_skin_checked="1">
+                                                            <h5><strong>1 Geniş Malzeme Seçenekleri</strong></h5>
+                                                            <p>
+                                                                Alüminyum, çelik, paslanmaz çelik, bakır ve diğer özel
+                                                                malzeme seçenekleri.
+                                                            </p>
+                                                            <h5><strong>2 Hassas İşleme ve Yüzey Kaplama</strong></h5>
+                                                            <p>Yüksek hassasiyetli üretim; kumlama, eloksallama, kaplama
+                                                                ve özel kaplama seçenekleri.</p>
+                                                            <h5><strong>3 Esnek Üretim Hacmi</strong></h5>
+                                                            <p>Tek prototipten seri üretime kadar ihtiyacınıza uygun
+                                                                çözümler.</p>
+                                                        </div>
+                                                        <div class="col-md-6 pl-20" bis_skin_checked="1">
+                                                            <h5><strong>4 Uygun Maliyet</strong></h5>
+                                                            <p>Küçük ve büyük üretim hacimleri için rekabetçi
+                                                                fiyatlandırma.</p>
+                                                            <h5><strong>5 Hızlı Teslimat Süreleri</strong></h5>
+                                                            <p>Ürünler, karmaşıklığına bağlı olarak 5-10 iş günü içinde
+                                                                teslim edilir.</p>
+                                                            <h5><strong>6 Özelleştirme ve Ölçeklenebilirlik </strong>
+                                                            </h5>
+                                                            <p>Tasarımlar tamamen özelleştirilebilir ve gelecekteki
+                                                                ihtiyaçlarınıza göre ölçeklenebilir.</p>
+                                                        </div>
+                                                    </div> <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-64 bg-work-02" bis_skin_checked="1">
+                <div bis_skin_checked="1">
+                    <div class="container px-m-24" bis_skin_checked="1">
+                        <h2 class="fs-32 fw-500 text-center">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Üretim Makineleri</font>
+                            </font>
+                        </h2>
+                        <div class="max-width-750 mx-auto fs-16 mt-4 pt-2" bis_skin_checked="1">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Tüm üretim süreçlerimizde çeşitli makine seçenekleri sunuyoruz. Fason projeler için kullanılan makinelerimiz aşağıda listelenmiştir</font>
+                                </font>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-40 max-width-1280 mx-auto" bis_skin_checked="1">
+                        <div class="px-2 px-md-5 py-4" bis_skin_checked="1">
+                            <div class="container px-m-24" bis_skin_checked="1">
+                                <div class="row pt-1 pb-2 align-items-center d-none d-lg-flex" bis_skin_checked="1">
+                                    <div class="col-lg-3 fs-14 fw-500" bis_skin_checked="1"></div>
+                                    <div class="col-lg-3 fs-14 fw-500" bis_skin_checked="1">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Teknoloji</font>
+                                        </font>
+                                    </div>
+                                    <div class="col-lg-3 fs-14 fw-500" bis_skin_checked="1">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Ozellikler</font>
+                                        </font>
+                                    </div>
+                                    <div class="col-lg-3 fs-14 fw-500" bis_skin_checked="1">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Avantajlar</font>
+                                        </font>
+                                    </div>
+                                </div>
+                                <hr class="opacity-1 mb-0">
+                                <div href="#" class="color-unset hover-unset" bis_skin_checked="1">
+                                    <div class="row align-items-center py-3 hover-shadow" bis_skin_checked="1">
+                                        <div class="col-lg-3 fs-14 fw-400" bis_skin_checked="1">
+                                            <div class="d-flex align-items-center" bis_skin_checked="1">
+                                                <div class="wh-80 rounded-circle overflow-hidden" bis_skin_checked="1"><img class="lazy wh-80 object-fit-cover" alt="Çelik" src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2018/06/CNC-Turned-Stainless-Steel-Parts-300x225.jpg.webp" style=""></div>
+                                                <div class="color-blue-no fs-16 fw-700 ms-2 ps-1 w-100-80" bis_skin_checked="1">
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">CNC Freze</font>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 fs-14 fw-400 opacity-75 d-flex align-items-center" bis_skin_checked="1"><span class="fw-500 d-block d-lg-none py-2 w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Teknoloji &nbsp;</font>
+                                                </font>
+                                            </span><span class="w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">1000mm x 700mm x 600mm
+                                                    </font>
+                                                </font>
+                                            </span></div>
+                                        <div class="col-lg-3 fs-14 fw-400 opacity-75 d-flex align-items-center" bis_skin_checked="1"><span class="fw-500 d-block d-lg-none py-2 w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Ozellikler &nbsp;</font>
+                                                </font>
+                                            </span><span class="w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">4 Eksen</font>
+                                                </font>
+                                            </span></div>
+                                        <div class="col-lg-3 fs-14 fw-400 opacity-75 d-flex align-items-center" bis_skin_checked="1"><span class="fw-500 d-block d-lg-none py-2 w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Avantajlar &nbsp;</font>
+                                                </font>
+                                            </span><span class="w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Yüksek hassasiyet, karmaşık işleme</font>
+                                                </font>
+                                            </span></div>
+                                    </div>
+                                </div>
+                                <hr class="my-0">
+                                <div href="#" class="color-unset hover-unset" bis_skin_checked="1">
+                                    <div class="row align-items-center py-3 hover-shadow" bis_skin_checked="1">
+                                        <div class="col-lg-3 fs-14 fw-400" bis_skin_checked="1">
+                                            <div class="d-flex align-items-center" bis_skin_checked="1">
+                                                <div class="wh-80 rounded-circle overflow-hidden" bis_skin_checked="1"><img class="lazy wh-80 object-fit-cover" alt="Alüminyum" src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/06/CNC-machined-aluminum-reflector-1024x766-1-300x225.jpeg.webp" style=""></div>
+                                                <div class="color-blue-no fs-16 fw-700 ms-2 ps-1 w-100-80" bis_skin_checked="1">
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">CNC Freze</font>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 fs-14 fw-400 opacity-75 d-flex align-items-center" bis_skin_checked="1"><span class="fw-500 d-block d-lg-none py-2 w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Teknoloji &nbsp;</font>
+                                                </font>
+                                            </span><span class="w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">1200mm x 700mm x 700mm</font>
+                                                </font>
+                                            </span></div>
+                                        <div class="col-lg-3 fs-14 fw-400 opacity-75 d-flex align-items-center" bis_skin_checked="1"><span class="fw-500 d-block d-lg-none py-2 w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Ozellikler &nbsp;</font>
+                                                </font>
+                                            </span><span class="w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">3 Eksen</font>
+                                                </font>
+                                            </span></div>
+                                        <div class="col-lg-3 fs-14 fw-400 opacity-75 d-flex align-items-center" bis_skin_checked="1"><span class="fw-500 d-block d-lg-none py-2 w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Avantajlar &nbsp;</font>
+                                                </font>
+                                            </span><span class="w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Daha hızlı prototipleme</font>
+                                                </font>
+                                            </span></div>
+                                    </div>
+                                </div>
+                                <hr class="my-0">
+                                <div href="#" class="color-unset hover-unset" bis_skin_checked="1">
+                                    <div class="row align-items-center py-3 hover-shadow" bis_skin_checked="1">
+                                        <div class="col-lg-3 fs-14 fw-400" bis_skin_checked="1">
+                                            <div class="d-flex align-items-center" bis_skin_checked="1">
+                                                <div class="wh-80 rounded-circle overflow-hidden" bis_skin_checked="1"><img class="lazy wh-80 object-fit-cover" alt="Titanyum" src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2020/11/titanium-parts-3-300x225.jpg.webp" style=""></div>
+                                                <div class="color-blue-no fs-16 fw-700 ms-2 ps-1 w-100-80" bis_skin_checked="1">
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">CNC Freze</font>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 fs-14 fw-400 opacity-75 d-flex align-items-center" bis_skin_checked="1"><span class="fw-500 d-block d-lg-none py-2 w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Boyut: &nbsp;</font>
+                                                </font>
+                                            </span><span class="w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">2000mm x 1300mm x 1000mm<</font>
+                                                </font>
+                                            </span></div>
+                                        <div class="col-lg-3 fs-14 fw-400 opacity-75 d-flex align-items-center" bis_skin_checked="1"><span class="fw-500 d-block d-lg-none py-2 w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Eksen: &nbsp;</font>
+                                                </font>
+                                            </span><span class="w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">3 Eksen</font>
+                                                </font>
+                                            </span></div>
+                                        <div class="col-lg-3 fs-14 fw-400 opacity-75 d-flex align-items-center" bis_skin_checked="1"><span class="fw-500 d-block d-lg-none py-2 w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Avantajlar &nbsp;</font>
+                                                </font>
+                                            </span><span class="w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Büyük ölçekli işleme</font>
+                                                </font>
+                                            </span></div>
+                                    </div>
+                                </div>
+                                <hr class="my-0">
+                                <div href="#" class="color-unset hover-unset" bis_skin_checked="1">
+                                    <div class="row align-items-center py-3 hover-shadow" bis_skin_checked="1">
+                                        <div class="col-lg-3 fs-14 fw-400" bis_skin_checked="1">
+                                            <div class="d-flex align-items-center" bis_skin_checked="1">
+                                                <div class="wh-80 rounded-circle overflow-hidden" bis_skin_checked="1"><img class="lazy wh-80 object-fit-cover" alt="PA(Naylon)" src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/uploads/2023/06/u4226392031591513540fm253fmtautoapp138fJPEG-300x225.webp" style=""></div>
+                                                <div class="color-blue-no fs-16 fw-700 ms-2 ps-1 w-100-80" bis_skin_checked="1">
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">8 İnç CNC Torna</font>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 fs-14 fw-400 opacity-75 d-flex align-items-center" bis_skin_checked="1"><span class="fw-500 d-block d-lg-none py-2 w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Boyut: &nbsp;</font>
+                                                </font>
+                                            </span><span class="w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">300mm x 600mm</font>
+                                                </font>
+                                            </span></div>
+                                        <div class="col-lg-3 fs-14 fw-400 opacity-75 d-flex align-items-center" bis_skin_checked="1"><span class="fw-500 d-block d-lg-none py-2 w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Eksen: &nbsp;</font>
+                                                </font>
+                                            </span><span class="w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                    </font>
+                                                </font>
+                                            </span></div>
+                                        <div class="col-lg-3 fs-14 fw-400 opacity-75 d-flex align-items-center" bis_skin_checked="1"><span class="fw-500 d-block d-lg-none py-2 w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Avantajlar: &nbsp;</font>
+                                                </font>
+                                            </span><span class="w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Silindirik işleme yeteneği</font>
+                                                </font>
+                                            </span></div>
+                                    </div>
+                                </div>
+                                <hr class="my-0">
+                                <div href="#" class="color-unset hover-unset" bis_skin_checked="1">
+                                    <div class="row align-items-center py-3 hover-shadow" bis_skin_checked="1">
+                                        <div class="col-lg-3 fs-14 fw-400" bis_skin_checked="1">
+                                            <div class="d-flex align-items-center" bis_skin_checked="1">
+                                                <div class="wh-80 rounded-circle overflow-hidden" bis_skin_checked="1"><img class="lazy wh-80 object-fit-cover" alt="PMMA" src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/06/acrylic-sheet-300x225.jpeg.webp" style=""></div>
+                                                <div class="color-blue-no fs-16 fw-700 ms-2 ps-1 w-100-80" bis_skin_checked="1">
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Satıh Taşlama</font>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 fs-14 fw-400 opacity-75 d-flex align-items-center" bis_skin_checked="1"><span class="fw-500 d-block d-lg-none py-2 w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Boyut: &nbsp;</font>
+                                                </font>
+                                            </span><span class="w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">2000mm x 1000mm x 1000mm
+                                                    </font>
+                                                </font>
+                                            </span></div>
+                                        <div class="col-lg-3 fs-14 fw-400 opacity-75 d-flex align-items-center" bis_skin_checked="1"><span class="fw-500 d-block d-lg-none py-2 w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Eksen: &nbsp;</font>
+                                                </font>
+                                            </span><span class="w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">
+                                                    </font>
+                                                </font>
+                                            </span></div>
+                                        <div class="col-lg-3 fs-14 fw-400 opacity-75 d-flex align-items-center" bis_skin_checked="1"><span class="fw-500 d-block d-lg-none py-2 w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Avantajlar: &nbsp;</font>
+                                                </font>
+                                            </span><span class="w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Pürüzsüz yüzey bitişleri</font>
+                                                </font>
+                                            </span></div>
+                                    </div>
+                                </div>
+                                <hr class="my-0">
+                                <div href="#" class="color-unset hover-unset" bis_skin_checked="1">
+                                    <div class="row align-items-center py-3 hover-shadow" bis_skin_checked="1">
+                                        <div class="col-lg-3 fs-14 fw-400" bis_skin_checked="1">
+                                            <div class="d-flex align-items-center" bis_skin_checked="1">
+                                                <div class="wh-80 rounded-circle overflow-hidden" bis_skin_checked="1"><img class="lazy wh-80 object-fit-cover" alt="Silikon" src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/09/silicone-liquid-300x225.jpeg.webp" style=""></div>
+                                                <div class="color-blue-no fs-16 fw-700 ms-2 ps-1 w-100-80" bis_skin_checked="1">
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Lazer Kesim</font>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 fs-14 fw-400 opacity-75 d-flex align-items-center" bis_skin_checked="1"><span class="fw-500 d-block d-lg-none py-2 w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Boyut: &nbsp;</font>
+                                                </font>
+                                            </span><span class="w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">3000mm x 20000mm
+                                                    </font>
+                                                </font>
+                                            </span></div>
+                                        <div class="col-lg-3 fs-14 fw-400 opacity-75 d-flex align-items-center" bis_skin_checked="1"><span class="fw-500 d-block d-lg-none py-2 w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Eksen: &nbsp;</font>
+                                                </font>
+                                            </span><span class="w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;"></font>
+                                                </font>
+                                            </span></div>
+                                        <div class="col-lg-3 fs-14 fw-400 opacity-75 d-flex align-items-center" bis_skin_checked="1"><span class="fw-500 d-block d-lg-none py-2 w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Avantajlar: &nbsp;</font>
+                                                </font>
+                                            </span><span class="w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Hassas kesim, malzeme kaybını azaltır</font>
+                                                </font>
+                                            </span></div>
+                                    </div>
+                                </div>
+                                <hr class="my-0">
+                                <div href="#" class="color-unset hover-unset" bis_skin_checked="1">
+                                    <div class="row align-items-center py-3 hover-shadow" bis_skin_checked="1">
+                                        <div class="col-lg-3 fs-14 fw-400" bis_skin_checked="1">
+                                            <div class="d-flex align-items-center" bis_skin_checked="1">
+                                                <div class="wh-80 rounded-circle overflow-hidden" bis_skin_checked="1"><img class="lazy wh-80 object-fit-cover" alt="Titanyum" src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2020/11/titanium-parts-3-300x225.jpg.webp" style=""></div>
+                                                <div class="color-blue-no fs-16 fw-700 ms-2 ps-1 w-100-80" bis_skin_checked="1">
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Sac Büküm Abkant</font>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 fs-14 fw-400 opacity-75 d-flex align-items-center" bis_skin_checked="1"><span class="fw-500 d-block d-lg-none py-2 w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Boyut: &nbsp;</font>
+                                                </font>
+                                            </span><span class="w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">3000mm x 1000mm </font>
+                                                </font>
+                                            </span></div>
+                                        <div class="col-lg-3 fs-14 fw-400 opacity-75 d-flex align-items-center" bis_skin_checked="1"><span class="fw-500 d-block d-lg-none py-2 w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Eksen: &nbsp;</font>
+                                                </font>
+                                            </span><span class="w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;"></font>
+                                                </font>
+                                            </span></div>
+                                        <div class="col-lg-3 fs-14 fw-400 opacity-75 d-flex align-items-center" bis_skin_checked="1"><span class="fw-500 d-block d-lg-none py-2 w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Avantajlar &nbsp;</font>
+                                                </font>
+                                            </span><span class="w-xs-50">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Çeşitli büküm açısı seçenekleri</font>
+                                                </font>
+                                            </span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white" bis_skin_checked="1"><br><br><br>
+                <div class="container">
+                    <div class="row pd-10-mob" bis_skin_checked="1">
+                        <div class="col-md-12" bis_skin_checked="1">
+                            <h2 class=""><strong>Fason Uretim Nedir?</strong></h2>
+                        </div>
+                    </div>
+                    <div class="row pd-10-mob" bis_skin_checked="1">
+                        <div class="col-md-7 pr-20" bis_skin_checked="1">
+                            <p>Fason üretim, bir ürünün belirli parçalarının veya tamamının, üretim yapan bir şirket
+                                tarafından başka bir şirket adına üretilmesi sürecini ifade eder. Bu süreç, özellikle
+                                maliyetleri azaltmak ve üretim kapasitesini artırmak isteyen firmalar için büyük avantaj
+                                sağlar.</p>
+                            <p>Fason üretim süreçleri, genellikle kesme, bükme, montaj ve kaplama gibi işlemleri içerir.
+                                Bu işlemler, şirketlerin özel taleplerine göre özelleştirilebilir ve birbirinden
+                                bağımsız olarak veya bir bütün olarak uygulanabilir.</p>
+                            <p>Fason üretim, fonksiyonel prototiplerden son kullanıcı ürünlerine kadar birçok farklı
+                                amaç için kullanılabilir. Ancak, genellikle fason üretilen parçalar, pazara hazır hale
+                                gelmeden önce bir yüzey işlem veya son işlem sürecine ihtiyaç duyar.</p>
+                        </div>
+                        <div class="col-md-4 pl-20" bis_skin_checked="1">
+                            <picture>
+                                <source
+                                    data-lazy-srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2014/08/image-sheet-metal.jpg.webp"
+                                    type="image/webp"
+                                    srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2014/08/image-sheet-metal.jpg.webp">
+                                <img src="https://www.3erp.com/wp-content/uploads/2014/08/image-sheet-metal.jpg"
+                                    alt="3ERP sheet metal image 2" width="100%"
+                                    class="pl-20 webpexpress-processed entered lazyloaded"
+                                    data-lazy-src="https://www.3erp.com/wp-content/uploads/2014/08/image-sheet-metal.jpg"
+                                    data-ll-status="loaded"><noscript><img
+                                        src="https://www.3erp.com/wp-content/uploads/2014/08/image-sheet-metal.jpg"
+                                        alt="3ERP sheet metal image 2" width="100%"
+                                        class="pl-20 webpexpress-processed"></noscript>
+                            </picture>
+                        </div>
+                    </div>
+                    <br><br><br>
+                </div>
+
+            </div>
+
+            <div class="row" bis_skin_checked="1"><br><br><br></div>
+        </div>
+        <div class="footer-section" id="footer-section"></div>
+
+    </div>
+
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
