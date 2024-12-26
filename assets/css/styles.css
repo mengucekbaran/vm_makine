@@ -1205,3 +1205,123 @@ div.wpb_row {
     width: 100%;
   }
 }
+/* Photo SLIDER*/
+/* .slick-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slick-slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.slider-btn {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.slider-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slick-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+} */
+
+
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 25%; /* Varsayılan: 4 görsel */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .slide {
+      flex: 0 0 100%; /* Küçük ekranlarda 1 görsel */
+  }
+}

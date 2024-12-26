@@ -74,7 +74,73 @@ const initializeNavbar = () => {
  }
  
  addEventListener('resize', removeStyle);
+
 };
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
 
+let currentIndex = 0;
+const slidesPerView = window.innerWidth <= 768 ? 1 : 4; // Responsive için 1 veya 4 görsel
+const totalSlides = slides.length - slidesPerView + 1; // Kaydırılabilir toplam index
 
+// Slider'ı güncelle
+function updateSlider() {
+    slider.style.transform = `translateX(-${currentIndex * (100 / slidesPerView)}%)`;
+    dots.forEach(dot => dot.classList.remove('active'));
+    if (dots[currentIndex]) {
+        dots[currentIndex].classList.add('active');
+    }
+}
 
+// Sol oka tıklama
+prevButton.addEventListener('click', () => {
+    currentIndex = currentIndex === 0 ? totalSlides - 1 : currentIndex - 1;
+    updateSlider();
+    resetAutoSlide();
+});
+
+// Sağ oka tıklama
+nextButton.addEventListener('click', () => {
+    currentIndex = currentIndex === totalSlides - 1 ? 0 : currentIndex + 1;
+    updateSlider();
+    resetAutoSlide();
+});
+
+// Dotlara tıklama
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        currentIndex = index;
+        updateSlider();
+        resetAutoSlide();
+    });
+});
+
+// Otomatik kaydırma
+let autoSlide = setInterval(() => {
+    currentIndex = currentIndex === totalSlides - 1 ? 0 : currentIndex + 1;
+    updateSlider();
+}, 3000); // 3 saniye aralık
+
+// Otomatik kaydırmayı sıfırla
+function resetAutoSlide() {
+    clearInterval(autoSlide);
+    autoSlide = setInterval(() => {
+        currentIndex = currentIndex === totalSlides - 1 ? 0 : currentIndex + 1;
+        updateSlider();
+    }, 3000);
+}
+
+// Slider'ı başlat
+updateSlider();
+
+// Ekran boyutu değişikliğini dinle
+window.addEventListener('resize', () => {
+    const slidesPerViewNew = window.innerWidth <= 768 ? 1 : 4;
+    if (slidesPerView !== slidesPerViewNew) {
+        currentIndex = 0; // Responsive değişim sonrası sıfırla
+        location.reload(); // Sayfayı yeniden yükle (istenirse kaldırılabilir)
+    }
+});
