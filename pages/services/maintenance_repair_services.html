@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VM MAKİNE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== BOOTSTRAP ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--=============== FONTAWESOME ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--================== JQUERY================= -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+
+
+
+
+    <script>
+        // Document ready event
+        $(document).ready(function () {
+            // Navbarı yükleme
+            // *********************NAVBAR**************************//
+            $("#unite-header").load("../../includes/navbar.html", function () {
+                showMenu('nav-toggle', 'nav-menu');
+                // Navbar yüklendikten sonra initializeNavbar fonksiyonunu çağırın
+                initializeNavbar();
+            });
+            // *********************MAIN**************************//
+            // $("#main-section").load("../pages/home.html", function () {});
+            // *********************FOOTER**************************//
+            $("#footer-section").load("../../includes/footer.html", function () { });
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--=============== HEADER ===============-->
+        <div class="unite-header" id="unite-header"></div>
+        <div class="main-section" id="main-section">
+            <div class="titlebar m-0" data-rocket-lazy-bg-5251b62e-b121-4438-98b3-530417577c53="loaded"
+                data-rocket-lazy-bg-689a979a-d37f-47af-84ba-2f4fba9cdda9="loaded" bis_skin_checked="1">
+                <div class="row" bis_skin_checked="1">
+                    <div bis_skin_checked="1"></div>
+                    <div class="right" bis_skin_checked="1"></div>
+                </div>
+            </div>
+            <!-- <div class="actual-image-container position-relative" bis_skin_checked="1">
+                <img src="../../assets/images/sheet-metal-prototyping.jpg" width="100%;" alt="sheet metal prototyping service"> 
+                <div class="position-absolute black-back-p-40-shadow text-center v-align-middle" bis_skin_checked="1">
+                    <h1 class="color-white mb-0 text-center">Fason Hizmetlerimiz</h1>
+                    <div class="mt-4 fs-24 color-white" bis_skin_checked="1">Gelen talebe göre tüm ebatlarda parçaların fason
+                        işçilikleri tezgah parkurumuzda işlenmektedir.</div>
+                        
+                    <div class="mt-40 d-flex align-items-center justify-content-center" bis_skin_checked="1"><a href="../request-a-quote.html" class="d-flex align-items-center bg-pink py-2 px-4 btn-round color-unset hover-unset"><span><svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1" y="1" width="24" height="16" rx="1" stroke="white" stroke-width="2">
+                                    </rect>
+                                    <path d="M1.0918 2.11719L13.2607 9.52895L25.1254 2.11719" stroke="white" stroke-width="2" stroke-linejoin="round"></path>
+                                </svg></span><span class="fs-20 ms-2">Ucretsiz Bir Proje Incelemesi Ile Baslayin</span></a></div>
+                </div>
+            </div> -->
+            <div class="btscls position-relative" bis_skin_checked="1"><img fetchpriority="high"
+                    src="../../assets/images/sheet-metal-prototyping.jpg" width="100%;" class="mh-450-cover"
+                    alt="3erp Rapid Prototyping Services">
+                <div class="position-absolute w-100 h-100 top-0 left-0" bis_skin_checked="1">
+                    <div class="container text-white text-center h-100 d-flex flex-column justify-content-center"
+                        bis_skin_checked="1">
+                        <h1 class="fs-40"><strong>Bakim & Onarim Hizmetlerimiz</strong></h1>
+                        <div class="mt-4 fs-24" bis_skin_checked="1">Tum ebatlarda parcalar islenmektedir
+                        </div>
+                        <div class="mt-40 d-flex align-items-center justify-content-center" bis_skin_checked="1"><a
+                                href="../request-a-quote.html"
+                                class="d-flex align-items-center bg-pink py-2 px-4 btn-round color-unset hover-unset"><span><svg
+                                        width="26" height="18" viewBox="0 0 26 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1" y="1" width="24" height="16" rx="1" stroke="white" stroke-width="2">
+                                        </rect>
+                                        <path d="M1.0918 2.11719L13.2607 9.52895L25.1254 2.11719" stroke="white"
+                                            stroke-width="2" stroke-linejoin="round"></path>
+                                    </svg></span><span class="fs-20 ms-2">Proje Teklifi Al</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 
+            <div class="bgg-image bg-white" style="padding: 50px 0px;" bis_skin_checked="1">
+                <div class="bg-testi-white" style="background:none;" bis_skin_checked="1">
+                    <div class="container" bis_skin_checked="1">
+                        <div class="col-md-12" bis_skin_checked="1"> <br>
+                            <div class="" style="padding:0px 10px;" bis_skin_checked="1">
+                                <p>Need mold making supplies for mass production parts? 3ERP is known as the best mold
+                                    maker in China. With mold making facilities in house and resources from our
+                                    partners, we are able to provide plastic injection molds for both rigid plastics and
+                                    rubbers, metal injection molds for all types of precision stainless steel parts, and
+                                    pressure die casting molds for aluminum, magnesium and zinc. We offer low-cost local
+                                    production molds and high-quality exported molds for all your project needs.</p>
+                                <p>Whatever you need <a href="https://www.3erp.com/services/rapid-tooling/"
+                                        target="_blank" rel="noopener">prototype molds</a> for the short-run production,
+                                    or mass production molds for millions shots, 3ERP can handle them for you smoothly.
+                                </p>
+                            </div> <br>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="pt-64" bis_skin_checked="1">
+                <div class="container" bis_skin_checked="1">
+                    <div class="row" bis_skin_checked="1">
+                        <div class="col-12 text-center" bis_skin_checked="1">
+                            <h2 class="fs-36 fw-700">Bakim & Onarim Çözümleri</h2>
+                            <div class="" bis_skin_checked="1"><svg width="161" height="18" viewBox="0 0 161 18"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.1799 9.03075C25.3554 5.05927 58.149 -0.69739 145.971 2.75771C68.4173 -0.293401 46.6743 5.29866 24.6743 9.44946C58.026 7.65881 68.1743 -2.62006 159.335 9.44946C91.1743 1.71224 40.4211 8.98911 9.17432 16.3799"
+                                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                                        style="stroke: var(--first-pink-color);"></path>
+                                </svg></div>
+                            <p>Firmamız, makine ve elektrik sistemleri için kapsamlı bakım ve onarım hizmetleri
+                                sunmaktadır. Amacımız, üretim süreçlerinizde olası kesintileri en aza indirgemek ve
+                                sistemlerinizin maksimum verimlilikle çalışmasını sağlamaktır. Uzman ekibimiz, her türlü
+                                arıza ve bakım ihtiyacınıza hızlı ve etkili çözümler sunarak, işletmenizin sürekliliğini
+                                güvence altına alır.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container bgg-image bg-white pt-64 " bis_skin_checked="1">
+                <div class="bg-testi-white" bis_skin_checked="1">
+                    <div class="row">
+                        <div class="d-flex px-1 py-1 col-sm-12 " bis_skin_checked="1">
+                            <div class="" bis_skin_checked="1">
+                                <div class="tile-content-complete ptb-0" bis_skin_checked="1">
+                                    <div class="v-s-tile-content " bis_skin_checked="1">
+                                        <div class="row mt-40" bis_skin_checked="1">
+                                            <div class="col-lg-3 col-md-6 col-sm-12 mb-5 cpy-spl-slide d-md-block"
+                                                bis_skin_checked="1">
+                                                <div class="h-100 overflow-hidden d-flex flex-column justify-content-between bg-white shadow-sm"
+                                                    bis_skin_checked="1">
+                                                    <div bis_skin_checked="1">
+                                                        <div bis_skin_checked="1"><img class="lazy w-100 other-lazy"
+                                                                alt="Automotive"
+                                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/09/interior-parts-img-405x270.jpg.webp"
+                                                                style=""></div>
+                                                        <div class="mt-3 px-3" bis_skin_checked="1">
+                                                            <h3 class="fs-20 fw-600">Periyodik Bakim</h3>
+                                                        </div>
+                                                        <div class="mt-3 opacity-75 opacity-75 fs-16 px-3"
+                                                            bis_skin_checked="1">
+                                                            <p>Large size parts such as CNC machined ABS bumpers, PC/ABS
+                                                                dashboards and
+                                                                precise automotive components like reflectors, lenses,
+                                                                steering wheel
+                                                                components, engine, transmission.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-12 mb-5 cpy-spl-slide d-md-block"
+                                                bis_skin_checked="1">
+                                                <div class="h-100 overflow-hidden d-flex flex-column justify-content-between bg-white shadow-sm"
+                                                    bis_skin_checked="1">
+                                                    <div bis_skin_checked="1">
+                                                        <div bis_skin_checked="1"><img class="lazy w-100 other-lazy"
+                                                                alt="Robotics and Automations"
+                                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/10/industrial-robotic-arm-e1697008682588-405x270.png.webp"
+                                                                style=""></div>
+                                                        <div class="mt-3 px-3" bis_skin_checked="1">
+                                                            <h3 class="fs-20 fw-600">Hizli Ariza Giderimi</h3>
+                                                        </div>
+                                                        <div class="mt-3 opacity-75 opacity-75 fs-16 px-3"
+                                                            bis_skin_checked="1">
+                                                            <p>Manipulator parts, actuators, end effectors, motors,
+                                                                automatic control
+                                                                equipment, clamps, and housings for the robotics &amp;
+                                                                automation
+                                                                industry.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-12 mb-5 cpy-spl-slide d-md-block"
+                                                bis_skin_checked="1">
+                                                <div class="h-100 overflow-hidden d-flex flex-column justify-content-between bg-white shadow-sm"
+                                                    bis_skin_checked="1">
+                                                    <div bis_skin_checked="1">
+                                                        <div bis_skin_checked="1"><img class="lazy w-100 other-lazy"
+                                                                alt="Medical"
+                                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/06/medical-e1687610030364-405x270.jpg.webp"
+                                                                style=""></div>
+                                                        <div class="mt-3 px-3" bis_skin_checked="1">
+                                                            <h3 class="fs-20 fw-600">Yedek Parca Tedarigi</h3>
+                                                        </div>
+                                                        <div class="mt-3 opacity-75 opacity-75 fs-16 px-3"
+                                                            bis_skin_checked="1">
+                                                            <p>Components for medical needs such as stainless steel or
+                                                                titanium bone
+                                                                plate, prostheses, respiratory devices, handheld
+                                                                devices, diagnosis
+                                                                equipment, anatomical models, and surgical instruments.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-12 mb-5 cpy-spl-slide d-md-block"
+                                                bis_skin_checked="1">
+                                                <div class="h-100 overflow-hidden d-flex flex-column justify-content-between bg-white shadow-sm"
+                                                    bis_skin_checked="1">
+                                                    <div bis_skin_checked="1">
+                                                        <div bis_skin_checked="1"><img class="lazy w-100 other-lazy"
+                                                                alt="Aerospace"
+                                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/10/46820_16_9-schaeffler-aerospace-jet-engine_rwd_600-405x270.jpg.webp"
+                                                                style=""></div>
+                                                        <div class="mt-3 px-3" bis_skin_checked="1">
+                                                            <h3 class="fs-20 fw-600">Kurulum ve Egitim</h3>
+                                                        </div>
+                                                        <div class="mt-3 opacity-75 opacity-75 fs-16 px-3"
+                                                            bis_skin_checked="1">
+                                                            <p>Aerospace engines, fuselages, turbines, brakes, tire
+                                                                parts, lighting
+                                                                system, vacuum pumps, and fuel pumps parts.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="pt-64 bg-work-02" bis_skin_checked="1">
+                <div class="container">
+                    <div class="row pd-10-mob" bis_skin_checked="1">
+                        <div class="col-md-12" bis_skin_checked="1">
+                            <h2 class=""><strong>Makine Bakim ve Onarim Cozumleri</strong></h2>
+                        </div>
+                    </div>
+                    <div class="row pd-10-mob" bis_skin_checked="1">
+                        <div class="col-md-7 pr-20 my-3" bis_skin_checked="1">
+                            <ul>
+                                <li><strong>Pres Parçaları Problem Giderimleri:</strong> Kırılan parçaların tespiti
+                                    sonrasında alınan ölçülere göre problemin giderilmesi sağlanır. Tekrar yaşanmaması
+                                    için yerinde alınan aksiyonlarla sorunlar kalıcı olarak çözüme kavuşturulur. Uzman
+                                    ekibimiz, pres parçalarının doğru çalışmasını sağlamak için gerekli tüm bakımları
+                                    titizlikle gerçekleştirir.</li>
+                                <li><strong>T Kanal Revizyonları:</strong> Pres tablalarında zamanla oluşan
+                                    deformasyonlar, üretim verimliliğinizi düşürebilir. Bu nedenle, T Kanal revizyonları
+                                    yapılarak pres tablalarının eski işlevselliğine kavuşması sağlanır. Detaylı
+                                    analizler ve ölçümlerle en uygun çözümler uygulanır.</li>
+                            </ul>
+
+                        </div>
+                        <div class="col-md-4 pl-20" bis_skin_checked="1">
+                            <picture>
+                                <source
+                                    data-lazy-srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2014/08/image-sheet-metal.jpg.webp"
+                                    type="image/webp"
+                                    srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2014/08/image-sheet-metal.jpg.webp">
+                                <img src="https://www.3erp.com/wp-content/uploads/2014/08/image-sheet-metal.jpg"
+                                    alt="3ERP sheet metal image 2" width="100%"
+                                    class="pl-20 webpexpress-processed entered lazyloaded"
+                                    data-lazy-src="https://www.3erp.com/wp-content/uploads/2014/08/image-sheet-metal.jpg"
+                                    data-ll-status="loaded"><noscript><img
+                                        src="https://www.3erp.com/wp-content/uploads/2014/08/image-sheet-metal.jpg"
+                                        alt="3ERP sheet metal image 2" width="100%"
+                                        class="pl-20 webpexpress-processed"></noscript>
+                            </picture>
+                        </div>
+                    </div>
+                    <br><br><br>
+                </div>
+
+            </div>
+
+            <div class="bg-white" bis_skin_checked="1"><br><br><br>
+                <div class="container">
+                    <div class="row pd-10-mob" bis_skin_checked="1">
+                        <div class="col-md-12" bis_skin_checked="1">
+                            <h2 class=""><strong>Elektrik Bakım ve Onarım Çözümleri</strong></h2>
+                        </div>
+                    </div>
+                    <div class="row pd-10-mob" bis_skin_checked="1">
+                        <div class="col-md-4 pl-20" bis_skin_checked="1">
+                            <picture>
+                                <source
+                                    data-lazy-srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2014/08/image-sheet-metal.jpg.webp"
+                                    type="image/webp"
+                                    srcset="https://www.3erp.com/wp-content/webp-express/webp-images/uploads/2014/08/image-sheet-metal.jpg.webp">
+                                <img src="https://www.3erp.com/wp-content/uploads/2014/08/image-sheet-metal.jpg"
+                                    alt="3ERP sheet metal image 2" width="100%"
+                                    class="pl-20 webpexpress-processed entered lazyloaded"
+                                    data-lazy-src="https://www.3erp.com/wp-content/uploads/2014/08/image-sheet-metal.jpg"
+                                    data-ll-status="loaded"><noscript><img
+                                        src="https://www.3erp.com/wp-content/uploads/2014/08/image-sheet-metal.jpg"
+                                        alt="3ERP sheet metal image 2" width="100%"
+                                        class="pl-20 webpexpress-processed"></noscript>
+                            </picture>
+                        </div>
+                        <div class="col-md-7 pl-20 my-3" bis_skin_checked="1">
+                            <ul>
+                                <li><strong>Projeksiyon Kaynak Makineleri Trafoları:</strong> Projeksiyon kaynak
+                                    makinelerinde zamanla trafolar yanabilir ve bu durum üretim sürecinde aksaklıklara
+                                    yol açabilir. Yanmış trafoların sarım ve değişim işlemleri uzman ekibimiz tarafından
+                                    hızlı ve güvenilir bir şekilde gerçekleştirilir.</li>
+                                <li><strong>Elektrik, Hava, Su Tesisatı Çözümleri:</strong> Üretim hatlarınızdaki
+                                    elektrik, su ve hava tesisatlarının çekimlerini yaparak, olası arızaların önüne
+                                    geçiyoruz. Tesisatlarınızın verimli ve güvenli bir şekilde çalışmasını sağlamak için
+                                    gerekli tüm bakım ve onarımları titizlikle gerçekleştiriyoruz. Uzman ekibimiz,
+                                    ihtiyaçlarınıza en uygun çözümleri sunmak için her zaman hazırdır.</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <br><br><br>
+                </div>
+            </div> -->
+            <div class="services-container bg-f5f5f5 mt-80 pt-80 include-submenu" id="services"
+                data-title="Capabilities" bis_skin_checked="1">
+                <style></style>
+                <div class="services-container" bis_skin_checked="1">
+                    <div class="container px-m-24" bis_skin_checked="1">
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-lg-6 mb-4" bis_skin_checked="1">
+                                <h2 class="fs-40 fw-600">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;"><light-pink>Bakim & Onarim </light-pink>
+                                            Alaninda </font>
+                                    </font><br>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Neler Yapiyoruz</font>
+                                    </font>
+                                </h2>
+                            </div>
+                            <div class="col-lg-6" bis_skin_checked="1">
+                                <div class="fs-20 mb-4" bis_skin_checked="1">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">
+                                            <light-pink class="fw-600">Makine bakım ve
+                                                onarım</light-pink> , <light-pink class="fw-600">elektrik bakım ve
+                                                onarım</light-pink>,
+                                            <light-pink class="fw-600">kart tamiri</light-pink>,
+                                            <light-pink class="fw-600">poke yoke</light-pink> imalatı ve<light-pink
+                                                class="fw-600"> pano imalatı</light-pink>
+
+                                        </font>
+                                    </font>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">hizmetlerimizle, sistemlerinizi en yüksek
+                                            verimlilikle çalışır halde tutuyoruz. Uzman ekibimizle hızlı ve etkili
+                                            çözümler sunuyoruz.</font>
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5" bis_skin_checked="1">
+                            <div class="col-lg-4 mb-4" bis_skin_checked="1">
+                                <div class="h-100 bg-gray overflow-hidden d-flex flex-column justify-content-between hover-shadow position-relative"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div class="img-tile-ser" style="" bis_skin_checked="1"><img
+                                                class="w-100 h-100 lazy object-fit-cover"
+                                                alt="CNC Frezeleme özellikli görsel"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2022/03/cnc-machining-img-e1648659074393.jpeg.webp"
+                                                style=""></div>
+                                        <div class="px-1 px-md-4 mx-3 pt-3 mt-2 mb-4 pb-2" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600 color-light-blue">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Makine Bakim ve Onarim
+                                                        Hizmeti</font>
+                                                </font>
+                                            </h3>
+                                            <div class="fs-14 mt-3 text-white" bis_skin_checked="1">
+                                                <p>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">
+                                                            <ul>
+                                                                <li><strong class="color-light-pink">Projeksiyon Kaynak
+                                                                        Makineleri Trafoları:</strong> Projeksiyon
+                                                                    kaynak
+                                                                    makinelerinde zamanla trafolar yanabilir ve bu durum
+                                                                    üretim sürecinde aksaklıklara
+                                                                    yol açabilir. Yanmış trafoların sarım ve değişim
+                                                                    işlemleri uzman ekibimiz tarafından
+                                                                    hızlı ve güvenilir bir şekilde gerçekleştirilir.
+                                                                </li>
+                                                                <li><strong class="color-light-pink">Elektrik, Hava, Su
+                                                                        Tesisatı Çözümleri:</strong> Üretim
+                                                                    hatlarınızdaki
+                                                                    elektrik, su ve hava tesisatlarının çekimlerini
+                                                                    yaparak, olası arızaların önüne
+                                                                    geçiyoruz. Tesisatlarınızın verimli ve güvenli bir
+                                                                    şekilde çalışmasını sağlamak için
+                                                                    gerekli tüm bakım ve onarımları titizlikle
+                                                                    gerçekleştiriyoruz. Uzman ekibimiz,
+                                                                    ihtiyaçlarınıza en uygun çözümleri sunmak için her
+                                                                    zaman hazırdır.</li>
+                                                            </ul>
+                                                        </font>
+                                                    </font>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4" bis_skin_checked="1">
+                                <div class="h-100 bg-gray overflow-hidden d-flex flex-column justify-content-between hover-shadow position-relative"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div class="img-tile-ser" style="" bis_skin_checked="1"><img
+                                                class="w-100 h-100 lazy object-fit-cover"
+                                                alt="CNC Frezeleme özellikli görsel"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2022/03/cnc-machining-img-e1648659074393.jpeg.webp"
+                                                style=""></div>
+                                        <div class="px-1 px-md-4 mx-3 pt-3 mt-2 mb-4 pb-2" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600 color-light-blue">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Elektrik Bakim ve Onarim
+                                                        Hizmeti</font>
+                                                </font>
+                                            </h3>
+                                            <div class="fs-14 mt-3 text-white" bis_skin_checked="1">
+                                                <p>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">
+                                                            <ul>
+                                                                <li><strong class="color-light-pink">Pres Parçaları
+                                                                        Problem Giderimleri:</strong> Kırılan parçaların
+                                                                    tespiti
+                                                                    sonrasında alınan ölçülere göre problemin
+                                                                    giderilmesi sağlanır. Tekrar yaşanmaması
+                                                                    için yerinde alınan aksiyonlarla sorunlar kalıcı
+                                                                    olarak çözüme kavuşturulur. Uzman
+                                                                    ekibimiz, pres parçalarının doğru çalışmasını
+                                                                    sağlamak için gerekli tüm bakımları
+                                                                    titizlikle gerçekleştirir.</li>
+                                                                <li><strong class="color-light-pink">T Kanal
+                                                                        Revizyonları:</strong> Pres tablalarında zamanla
+                                                                    oluşan
+                                                                    deformasyonlar, üretim verimliliğinizi düşürebilir.
+                                                                    Bu nedenle, T Kanal revizyonları
+                                                                    yapılarak pres tablalarının eski işlevselliğine
+                                                                    kavuşması sağlanır. Detaylı
+                                                                    analizler ve ölçümlerle en uygun çözümler uygulanır.
+                                                                </li>
+                                                            </ul>
+                                                        </font>
+                                                    </font>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4" bis_skin_checked="1">
+                                <div class="h-100 bg-gray overflow-hidden d-flex flex-column justify-content-between hover-shadow position-relative"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div class="img-tile-ser" style="" bis_skin_checked="1"><img
+                                                class="w-100 h-100 lazy object-fit-cover"
+                                                alt="CNC Tornalama'nın öne çıkan görseli"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/06/WechatIMG7106-405x270.jpeg.webp"
+                                                style=""></div>
+                                        <div class="px-1 px-md-4 mx-3 pt-3 mt-2 mb-4 pb-2" bis_skin_checked="1"><a
+                                                href="https://www.3erp.com/services/cnc-machining/cnc-turning/"
+                                                class="hover-unset"></a>
+                                            <h3 class="fs-20 fw-600 color-light-blue"><a
+                                                    href="https://www.3erp.com/services/cnc-machining/cnc-turning/"
+                                                    class="hover-unset">
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Kart Tamiri Hizmeti
+                                                        </font>
+                                                    </font>
+                                                </a></h3>
+                                            <div class="fs-14 mt-3 text-white" bis_skin_checked="1">
+                                                <p>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Her tür kart tamiri,
+                                                            teknik ekibimiz tarafından detaylı inceleme sonrasında
+                                                            çözüme kavuşturulmaktadır. Elektronik devre kartlarındaki
+                                                            arızaları hızlı ve etkili bir şekilde onararak,
+                                                            cihazlarınızın tekrar sorunsuz çalışmasını sağlıyoruz.
+                                                        </font>
+                                                    </font>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4" bis_skin_checked="1">
+                                <div class="h-100 bg-gray overflow-hidden d-flex flex-column justify-content-between hover-shadow position-relative"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div class="img-tile-ser" style="" bis_skin_checked="1"><img
+                                                class="w-100 h-100 lazy object-fit-cover"
+                                                alt="EDM ve Tel Kesme özellikli görsel"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2024/02/media_20240228_165843_6112817783104984902-scaled-e1709125344274-405x270.jpg.webp"
+                                                style=""></div>
+                                        <div class="px-1 px-md-4 mx-3 pt-3 mt-2 mb-4 pb-2" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600 color-light-blue">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Poke Yoke İmalatı Hizmeti
+                                                    </font>
+                                                </font>
+                                            </h3>
+                                            <div class="fs-14 mt-3 text-white" bis_skin_checked="1">
+                                                <p>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Üretim süreçlerinde hata
+                                                            önleyici sistemler (Poke Yoke) tasarlar ve üretiriz. Bu
+                                                            sistemler, kalite hatalarını önleyerek üretim
+                                                            verimliliğinizi artırır. Operatörlerin yanlış montaj
+                                                            yapmasını engelleyerek kaliteyi artırıyoruz.
+                                                        </font>
+                                                    </font>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4" bis_skin_checked="1">
+                                <div class="h-100 bg-gray overflow-hidden d-flex flex-column justify-content-between hover-shadow position-relative"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div class="img-tile-ser" style="" bis_skin_checked="1"><img
+                                                class="w-100 h-100 lazy object-fit-cover"
+                                                alt="CNC Taşlama özellikli görsel"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/uploads/2024/02/Precision-Grinding-e1586858094908.jpeg-405x270.webp"
+                                                style=""></div>
+                                        <div class="px-1 px-md-4 mx-3 pt-3 mt-2 mb-4 pb-2" bis_skin_checked="1">
+                                            <h3 class="fs-20 fw-600 color-light-blue">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Pano İmalatı Hizmeti</font>
+                                                </font>
+                                            </h3>
+                                            <div class="fs-14 mt-3 text-white" bis_skin_checked="1">
+                                                <p>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Elektrik sistemlerinin
+                                                            güvenli ve düzenli bir şekilde çalışmasını sağlamak için
+                                                            pano imalatı hizmetleri sunuyoruz. Uzman ekibimiz, yüksek
+                                                            kaliteli malzemeler kullanarak dayanıklı ve güvenilir
+                                                            panolar üretir. İhtiyaçlarınıza özel çözümlerle
+                                                            sistemlerinizin verimli çalışmasını garanti ederiz.</font>
+                                                    </font>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-80" bis_skin_checked="1"></div>
+            </div>
+
+            <div class="mt-80" bis_skin_checked="1">
+                <div class="mt-5" bis_skin_checked="1">
+                    <div class="cta-main" bis_skin_checked="1">
+                        <div class="container" bis_skin_checked="1">
+                            <div class="bg-black" bis_skin_checked="1">
+                                <div class="row align-items-center" bis_skin_checked="1">
+                                    <div class="col-md-1" bis_skin_checked="1"></div>
+                                    <div class="col-lg-8" bis_skin_checked="1">
+                                        <div class="bg-cta-frame pt-96 pb-120 text-lg-start lazy" bis_skin_checked="1"
+                                            style="background-image: url(&quot;https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/uploads/2023/03/cta-bg.svg&quot;);">
+                                            <div class="fs-32 fw-500 text-white" bis_skin_checked="1">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Bakim & onarim </font>
+                                                </font><br>
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">destegi alin</font>
+                                                </font>
+                                                <span class="color-green fs-12"><i class="ri-square-line"
+                                                        aria-hidden="true"></i></span>
+                                            </div>
+                                            <div class="fs-16 mt-3 text-white opacity-5" bis_skin_checked="1">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Tüm bilgiler ve yüklemeler
+                                                        güvenli ve
+                                                        gizlidir.</font>
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 pl-1 text-center text-lg-start pb-4" bis_skin_checked="1"><a
+                                            class="btn btn-round btn-green fw-500 bg-btn"
+                                            href="https://www.3erp.com/request-a-quote/">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;"> Anında İletişime Geçin </font>
+                                                <i class="ri-whatsapp-fill" style="size: 32px;"></i>
+                                            </font>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" bis_skin_checked="1"><br><br><br></div>
+        </div>
+        <div class="footer-section" id="footer-section"></div>
+
+    </div>
+
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
