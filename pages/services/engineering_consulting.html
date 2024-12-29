@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VM MAKİNE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== BOOTSTRAP ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--=============== FONTAWESOME ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--================== JQUERY================= -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+
+
+
+
+    <script>
+        // Document ready event
+        $(document).ready(function () {
+            // Navbarı yükleme
+            // *********************NAVBAR**************************//
+            $("#unite-header").load("../../includes/navbar.html", function () {
+                showMenu('nav-toggle', 'nav-menu');
+                // Navbar yüklendikten sonra initializeNavbar fonksiyonunu çağırın
+                initializeNavbar();
+            });
+            // *********************MAIN**************************//
+            // $("#main-section").load("../pages/home.html", function () {});
+            // *********************FOOTER**************************//
+            $("#footer-section").load("../../includes/footer.html", function () { });
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--=============== HEADER ===============-->
+        <div class="unite-header" id="unite-header"></div>
+        <div class="main-section" id="main-section">
+            <div class="banner-container" bis_skin_checked="1">
+                <div class="home-top mob-pick pt-64 bg-dark overflow-hidden d-none d-lg-block" bis_skin_checked="1">
+                    <div class="container px-m-24" bis_skin_checked="1">
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-lg-6" bis_skin_checked="1">
+                                <h1 class="fw-700 text-white h1-get-jquery h2">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Muhendislik ve Danismanlik Hizmetleri
+                                        </font>
+                                    </font>
+                                </h1>
+                                <div class="pt-3 pt-md-4 right-ul text-white mob-pick max-width-500 h1-get-jquery-2"
+                                    bis_skin_checked="1">
+                                    <p>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Mühendislik ve danışmanlık
+                                                hizmetlerimiz, mevcut ve gelişen otomasyon ihtiyaçlarınızı karşılamanıza
+                                                yardımcı olmak için tasarlanmıştır. Kaynaklarınızı en üst düzeye
+                                                çıkarmanıza, toplam sahip olma maliyetini en aza indirmenize ve ekipman
+                                                yaşam döngünüzü uzatmanıza yardımcı olacak uzmanlığa sahibiz.</font>
+                                        </font>
+                                    </p>
+                                </div>
+                                <div class="mt-3 mt-md-5" bis_skin_checked="1"><a
+                                        class="btn btn-round btn-green fw-500 bg-btn"
+                                        href="https://www.3erp.com/request-a-quote/">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;"> Anında İletişime Geçin </font>
+                                            <i class="ri-whatsapp-fill" style="size: 32px;"></i>
+                                        </font>
+                                    </a></div>
+                                <div class="mob-pick pb-120" bis_skin_checked="1"></div>
+                            </div>
+                            <div class="col-lg-6 my-auto" bis_skin_checked="1"><img
+                                    src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/06/hero-cnc-1.jpg.webp"
+                                    class="not-lazy mix-blend-lighten" alt="Kahraman CNC"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-top mob-pick pt-5 bg-dark overflow-hidden mob-design d-lg-none" bis_skin_checked="1">
+                    <div class="container px-m-24" bis_skin_checked="1">
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-12" bis_skin_checked="1">
+                                <div class="h1-put-jquery" bis_skin_checked="1">
+                                    <h1 class="fw-600 text-white h2">Muhendislik ve Danismanlik Hizmetleri</h1>
+                                </div>
+                                <div class="pt-3 pt-md-4 right-ul text-white mob-pick fs-14 ul-mt-5 h1-put-jquery-2"
+                                    bis_skin_checked="1">
+                                    <p>Mühendislik ve danışmanlık
+                                        hizmetlerimiz, mevcut ve gelişen otomasyon ihtiyaçlarınızı karşılamanıza
+                                        yardımcı olmak için tasarlanmıştır. Kaynaklarınızı en üst düzeye
+                                        çıkarmanıza, toplam sahip olma maliyetini en aza indirmenize ve ekipman
+                                        yaşam döngünüzü uzatmanıza yardımcı olacak uzmanlığa sahibiz.</p>
+                                </div>
+                                <div class="position-relative" bis_skin_checked="1">
+                                    <div class="pb-5" bis_skin_checked="1"><img class="lazy mix-blend-lighten w-100"
+                                            alt="Hero Cnc"
+                                            src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/06/hero-cnc-1-300x204.jpg.webp"
+                                            style=""></div>
+                                    <div class="mt-3 mt-md-5 w-100 bottom-0 start-0 py-4 d-flex justify-content-center"
+                                        bis_skin_checked="1"><a class="btn btn-round btn-green fw-500 bg-btn"
+                                            href="https://www.3erp.com/request-a-quote/">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;"> Anında İletişime Geçin </font>
+                                                <i class="ri-whatsapp-fill" style="size: 32px;"></i>
+                                            </font>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container pt-64" bis_skin_checked="1">
+                <div class="position-relative" bis_skin_checked="1">
+                    <div class="bt_bb_cell_inner" bis_skin_checked="1">
+                        <div class="col-xxl-12 col-xl-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 " bis_skin_checked="1">
+                            <header>
+                                <h2><span class="fs-28 fw-600 pr-lg-5"><span>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Tasarim Muhendislik Hizmetleri
+                                                </font>
+                                            </font>
+                                        </span></span></h2>
+                            </header>
+                        </div>
+                        <div class="px-1" bis_skin_checked="1">
+                            <div class="row" bis_skin_checked="1">
+                                <div class=" col-xxl-8 col-xl-8 " bis_skin_checked="1">
+                                    <div class="w-100" bis_skin_checked="1">
+                                        <div class="bt_bb_column_content_inner" bis_skin_checked="1">
+                                            <div bis_skin_checked="1">
+                                                <p>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">OEM üretim ve imalatında
+                                                            yılların deneyimi ve teknik yeteneklerin birikimine dayanan
+                                                            mühendislik ekibimiz, konsept geliştirmenin erken aşamasında
+                                                            yeni ürünlerin geliştirilmesi ve tasarımı konusunda
+                                                            müşterilerle tam olarak işbirliği yapabilmektedir. Tasarım
+                                                            konsept iletişiminden → bileşenler ve montaj çizimi →
+                                                            müşterinin çizim onayı → fikstür tasarımı → prototip →
+                                                            fonksiyonel test → numune alma müşteri onayı → seri üretime
+                                                            kadar süreci tam olarak kontrol edebiliyoruz; veya müşteri
+                                                            tarafından sağlanan ön tasarım ve taslağa dayanarak seri
+                                                            üretimden önce anında düzeltmeler ve öneriler
+                                                            sağlayabiliyoruz. Ürün geliştirme süresini etkili bir
+                                                            şekilde kısaltabilir, sorunları çözebilir, maliyetleri
+                                                            kontrol edebilir ve üretim konusunda hızlı bir şekilde fikir
+                                                            birliği oluşturabiliriz, böylece pazara daha hızlı ulaşmayı
+                                                            talep eden müşteriler rekabet avantajına sahip olabilir ve
+                                                            iş fırsatlarını sorunsuz bir şekilde yakalayabilir.</font>
+                                                    </font>
+                                                </p>
+                                            </div>
+                                            <div bis_skin_checked="1">
+                                                <div class="row right-ul " bis_skin_checked="1">
+                                                    <div class="col-lg-6" bis_skin_checked="1">
+                                                        <ul>
+                                                            <li>
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">Pro/Engineer
+                                                                        3D modelleme
+                                                                    </font>
+                                                                </font>
+                                                            </li>
+                                                            <li>
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">Uygunluk
+                                                                        Çalışmaları</font>
+                                                                </font>
+                                                            </li>
+                                                            <li>
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">Kapsamlı
+                                                                        değerlendirme
+                                                                    </font>
+                                                                </font>
+                                                            </li>
+                                                            <li>
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">Prototipler,
+                                                                        doğrulama ve optimizasyon</font>
+                                                                </font>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-6" bis_skin_checked="1">
+                                                        <ul>
+                                                            <li>
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">Yük
+                                                                        değerleri, yönleri ve titreşim
+                                                                    </font>
+                                                                </font>
+                                                            </li>
+                                                            <li>
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">Malzeme
+                                                                        seçimi, kaplamalar ve yağlama</font>
+                                                                </font>
+                                                            </li>
+                                                            <li>
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">Yığınlanma
+                                                                        toleransı, toplam entegre
+                                                                        hata
+                                                                    </font>
+                                                                </font>
+                                                            </li>
+                                                            <li>
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;">Yüzey
+                                                                        işlemleri</font>
+                                                                </font>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bt_bb_column col-xxl-4 col-xl-4 bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_align_left"
+                                    data-width="4"
+                                    data-bt-override-class="{&quot;bt_bb_align_&quot;:{&quot;current_class&quot;:&quot;bt_bb_align_left&quot;,&quot;xxl&quot;:&quot;left&quot;,&quot;xl&quot;:&quot;left&quot;}}"
+                                    bis_skin_checked="1">
+                                    <div class="bt_bb_column_content" bis_skin_checked="1">
+                                        <div class="bt_bb_column_content_inner" bis_skin_checked="1">
+                                            <div data-bb-version="4.5.4"
+                                                class="bt_bb_separator bt_bb_border_style_none bt_bb_top_spacing_ bt_bb_bottom_spacing_"
+                                                data-bt-override-class="{&quot;bt_bb_top_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_top_spacing_&quot;,&quot;xxl&quot;:&quot;&quot;,&quot;md&quot;:&quot;15&quot;,&quot;sm&quot;:&quot;15&quot;,&quot;xs&quot;:&quot;15&quot;},&quot;bt_bb_bottom_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_bottom_spacing_&quot;,&quot;xxl&quot;:&quot;&quot;}}"
+                                                bis_skin_checked="1"></div>
+                                            <div bis_skin_checked="1"><span><img
+                                                        src="https://www.bolymetal.com/wp-content/uploads/2021/11/consulting-640x600.jpg"
+                                                        data-full_image_src="https://www.bolymetal.com/wp-content/uploads/2021/11/consulting.jpg"
+                                                        data-image_src="https://www.bolymetal.com/wp-content/uploads/2021/11/consulting-640x600.jpg"
+                                                        alt="Prototipler ve örnekler | Boly Metal"
+                                                        class="w-100 lazy h-100 object-fit-cover"></span>
+                                                <div class="bt_bb_image_content"
+                                                    style="--bgcolor: rgba(0, 160, 221, 0.9);background-color: rgba(0, 160, 221, 0.9);"
+                                                    bis_skin_checked="1">
+                                                    <div class="bt_bb_image_content_flex" bis_skin_checked="1">
+                                                        <div class="bt_bb_image_content_inner" bis_skin_checked="1">
+                                                            <div class="bt_bb_text" style="color: #FFF;"
+                                                                bis_skin_checked="1">
+                                                                <p>
+                                                                    <font style="vertical-align: inherit;">
+                                                                        <font style="vertical-align: inherit;">Başarının
+                                                                            en büyük ölçütü müşteri memnuniyetidir.
+                                                                        </font>
+                                                                    </font>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- cell_inner -->
+                </div><!-- cell -->
+            </div>
+
+            <div class="services-container pt-80 include-submenu" id="services" data-title="Capabilities"
+                bis_skin_checked="1">
+                <div class="services" bis_skin_checked="1">
+                    <div class="container" bis_skin_checked="1">
+                        <div class="py-1 col-xl-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 " bis_skin_checked="1">
+                            <header>
+                                <h2><span class="fs-28 fw-600 pr-lg-5"><span>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Diger Muhendislik Hizmetleri
+                                                </font>
+                                            </font>
+                                        </span></span></h2>
+                            </header>
+                        </div>
+                        <div class="row pt-32" bis_skin_checked="1">
+                            <div class="col-lg-3 mb-4" bis_skin_checked="1">
+                                <div class="h-100 bg-f5f5f5 border-20 overflow-hidden d-flex flex-column justify-content-between hover-shadow"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div class="img-tile-ser bg-black" bis_skin_checked="1"><img class="w-100 lazy"
+                                                alt="CNC İşleme özellikli görsel"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/04/WechatIMG5121-405x270.jpeg.webp"
+                                                style=""></div>
+                                        <div class="card-title px-3 mx-1 pt-3 mt-2" bis_skin_checked="1"><a href="#"
+                                                class="color-unset">
+                                                <h3 class="fs-20 fw-600">
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Hızlı Prototipleme</font>
+                                                    </font>
+                                                </h3>
+                                            </a>
+                                            <div class="fs-14 mt-3" bis_skin_checked="1">
+                                                <p>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Standart prototipleme
+                                                            hizmeti sunar ve pazara en verimli şekilde ulaşmayı
+                                                            garantileyen hızlı prototipleme için özel bir süreç
+                                                            geliştirmiştir.</font>
+                                                    </font>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mb-4" bis_skin_checked="1">
+                                <div class="h-100 bg-f5f5f5 border-20 overflow-hidden d-flex flex-column justify-content-between hover-shadow"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div class="img-tile-ser bg-black" bis_skin_checked="1"><img class="w-100 lazy"
+                                                alt="CNC İşleme özellikli görsel"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/04/WechatIMG5121-405x270.jpeg.webp"
+                                                style=""></div>
+                                        <div class="card-title px-3 mx-1 pt-3 mt-2" bis_skin_checked="1"><a href="#"
+                                                class="color-unset">
+                                                <h3 class="fs-20 fw-600">
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Montaj ve Test</font>
+                                                    </font>
+                                                </h3>
+                                            </a>
+                                            <div class="fs-14 mt-3" bis_skin_checked="1">
+                                                <p>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Deneme çalışmasından,
+                                                            üretime, fonksiyonel testten sonuç analizine kadar eksiksiz
+                                                            bir hizmet. Yüksek kaliteli alt montajlı modüller sunun.
+                                                        </font>
+                                                    </font>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mb-4" bis_skin_checked="1">
+                                <div class="h-100 bg-f5f5f5 border-20 overflow-hidden d-flex flex-column justify-content-between hover-shadow"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div class="img-tile-ser bg-black" bis_skin_checked="1"><img class="w-100 lazy"
+                                                alt="CNC İşleme özellikli görsel"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/04/WechatIMG5121-405x270.jpeg.webp"
+                                                style=""></div>
+                                        <div class="card-title px-3 mx-1 pt-3 mt-2" bis_skin_checked="1"><a href="#"
+                                                class="color-unset">
+                                                <h3 class="fs-20 fw-600">
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Tedarik Zinciri Cözümü
+                                                        </font>
+                                                    </font>
+                                                </h3>
+                                            </a>
+                                            <div class="fs-14 mt-3" bis_skin_checked="1">
+                                                <p>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Müşteriler adına karmaşık
+                                                            tedarik zincirlerini yönetme konusunda oldukça deneyimli.
+                                                            Yıllık sözleşmeler ve min-max envanter anlaşmalarıyla genel
+                                                            siparişler konusunda uzmanlaşmıştır.
+                                                        </font>
+                                                    </font>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mb-4" bis_skin_checked="1">
+                                <div class="h-100 bg-f5f5f5 border-20 overflow-hidden d-flex flex-column justify-content-between hover-shadow"
+                                    bis_skin_checked="1">
+                                    <div bis_skin_checked="1">
+                                        <div class="img-tile-ser bg-black" bis_skin_checked="1"><img class="w-100 lazy"
+                                                alt="CNC İşleme özellikli görsel"
+                                                src="https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/webp-express/webp-images/uploads/2023/04/WechatIMG5121-405x270.jpeg.webp"
+                                                style=""></div>
+                                        <div class="card-title px-3 mx-1 pt-3 mt-2" bis_skin_checked="1"><a href="#"
+                                                class="color-unset">
+                                                <h3 class="fs-20 fw-600">
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Maliyet Düşürme Planı
+                                                        </font>
+                                                    </font>
+                                                </h3>
+                                            </a>
+                                            <div class="fs-14 mt-3" bis_skin_checked="1">
+                                                <p>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Hassas işlemenin yeniden
+                                                            mühendisliğini sağlayın. Müşterinin metal imalatında uzun
+                                                            vadeli metal tedarik ve üretim maliyetlerini azaltmak için
+                                                            maliyetten kaçınma zihniyetini benimsemesine yardımcı olur.
+                                                        </font>
+                                                    </font>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-80" bis_skin_checked="1"></div>
+            </div>
+
+            <div class="mt-80" bis_skin_checked="1">
+                <div class="mt-5" bis_skin_checked="1">
+                    <div class="cta-main" bis_skin_checked="1">
+                        <div class="container" bis_skin_checked="1">
+                            <div class="bg-black" bis_skin_checked="1">
+                                <div class="row align-items-center" bis_skin_checked="1">
+                                    <div class="col-md-1" bis_skin_checked="1"></div>
+                                    <div class="col-lg-8" bis_skin_checked="1">
+                                        <div class="bg-cta-frame pt-96 pb-120 text-lg-start lazy" bis_skin_checked="1"
+                                            style="background-image: url(&quot;https://wordpress-311437-2997507.cloudwaysapps.com/wp-content/uploads/2023/03/cta-bg.svg&quot;);">
+                                            <div class="fs-32 fw-500 text-white" bis_skin_checked="1">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Bakim & onarim </font>
+                                                </font><br>
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">destegi alin</font>
+                                                </font>
+                                                <span class="color-green fs-12"><i class="ri-square-line"
+                                                        aria-hidden="true"></i></span>
+                                            </div>
+                                            <div class="fs-16 mt-3 text-white opacity-5" bis_skin_checked="1">
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">Tüm bilgiler ve yüklemeler
+                                                        güvenli ve
+                                                        gizlidir.</font>
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 pl-1 text-center text-lg-start pb-4" bis_skin_checked="1"><a
+                                            class="btn btn-round btn-green fw-500 bg-btn"
+                                            href="https://www.3erp.com/request-a-quote/">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;"> Anında İletişime Geçin </font>
+                                                <i class="ri-whatsapp-fill" style="size: 32px;"></i>
+                                            </font>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" bis_skin_checked="1"><br><br><br></div>
+        </div>
+        <div class="footer-section" id="footer-section"></div>
+
+    </div>
+
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
